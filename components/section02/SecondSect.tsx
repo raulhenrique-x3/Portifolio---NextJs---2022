@@ -6,7 +6,7 @@ const SecondSect: NextPage = () => {
     return (
         <>
             <section className={styles.sectTwo}>
-            <p>Projetos</p>
+                <p>Projetos</p>
 
                 <div className={styles.myProjects}>
                     <figure className={styles.project1}>
@@ -15,127 +15,68 @@ const SecondSect: NextPage = () => {
                             alt={'petLover website'}
                             className={styles.petLover}
                             width={'500'}
-                            height={'200'} 
-                            layout={'responsive'}/>
-                        <h1>Pet Lover</h1>
-                        <h3>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a
-                            type specimen book.
-                        </h3>
+                            height={'200'}
+                            layout={'responsive'} />
+                        <div className={styles.figCont}>
+                            <h1>Pet Lover</h1>
+                            <h3>
+                                Projeto desenvolvido com o intuito de estudar sobre React-Router, React-Hook-Forms,
+                                consumo de multiplas APIs via Axios e firmar meu conhecimento em ReactJs.
+                            </h3>
+
+                        </div>
+
                         <div className={styles.buttons}>
                             <a href="https://github.com/raulhenrique-x3/React-SPA-PetLover"><button className={styles.sButton}><p>Código</p></button></a>
                             <a href="https://react-spa-pet-lover.vercel.app/"><button className={styles.sButton}>Website</button></a>
                         </div>
+
                     </figure>
 
                     <figure className={styles.project1}>
                         <Image
-                            src={'/petLover.png'}
-                            alt={'petLover website'}
-                            className={styles.petLover}
+                            src={'/ygoApi.png'}
+                            alt={'ygoApi website'}
+                            className={styles.ygoApi}
                             width={'500'}
-                            height={'200'} 
-                            layout="responsive"/>
-                        <h1>Pet Lover</h1>
-                        <h3>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a
-                            type specimen book.
-                        </h3>
+                            height={'200'}
+                            layout="responsive" />
+                        <div className={styles.figCont}>
+                            <h1>Yu-Gi-Oh Card of The Day</h1>
+                            <h3>
+                                Esse Webapp foi criado com ReactJs, consumindo a API do Yu-Gi-Oh! para que seja
+                                mostrado ao usuário um card aleatório do cardgame.
+                            </h3>
+
+                        </div>
 
                         <div className={styles.buttons}>
-                            <button className={styles.sButton}>Código</button>
-                            <button className={styles.sButton}>Website</button>
+                            <a href="https://github.com/raulhenrique-x3/Yu-Gi-Oh-Card-of-the-Day-API-"><button className={styles.sButton}>Código</button></a>
+                            <a href="https://yu-gi-oh-card-of-the-day-api.vercel.app/"><button className={styles.sButton}>Website</button></a>
                         </div>
                     </figure>
 
                     <figure className={styles.project1}>
                         <Image
-                            src={'/petLover.png'}
-                            alt={'petLover website'}
-                            className={styles.petLover}
+                            src={'/uxForm.png'}
+                            alt={'uxForm website'}
+                            className={styles.uxForm}
                             width={'500'}
-                            height={'200'} 
-                            layout="responsive"/>
-                        <h1>Pet Lover</h1>
-                        <h3>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a
-                            type specimen book.
-                        </h3>
+                            height={'200'}
+                            layout="responsive" />
+                        <div className={styles.figCont}>
+                            <h1>Ux Form</h1>
+                            <h3>
+                                Formulário criado para estudar renderização condicional no ReactJs.
+                                Leia o README no GitHub.
+                            </h3>
 
-                        <div className={styles.buttons}>
-                            <button className={styles.sButton}>Código</button>
-                            <button className={styles.sButton}>Website</button>
+
                         </div>
-                    </figure>
-
-                    <figure className={styles.project1}>
-                        <Image
-                            src={'/petLover.png'}
-                            alt={'petLover website'}
-                            className={styles.petLover}
-                            width={'500'}
-                            height={'200'} 
-                            layout="responsive"/>
-                        <h1>Pet Lover</h1>
-                        <h3>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a
-                            type specimen book.
-                        </h3>
 
                         <div className={styles.buttons}>
-                            <button className={styles.sButton}>Código</button>
-                            <button className={styles.sButton}>Website</button>
-                        </div>
-                    </figure>
-
-                    <figure className={styles.project1}>
-                        <Image
-                            src={'/petLover.png'}
-                            alt={'petLover website'}
-                            className={styles.petLover}
-                            width={'500'}
-                            height={'200'} 
-                            layout="responsive"/>
-                        <h1>Pet Lover</h1>
-                        <h3>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a
-                            type specimen book.
-                        </h3>
-
-                        <div className={styles.buttons}>
-                            <button className={styles.sButton}>Código</button>
-                            <button className={styles.sButton}>Website</button>
-                        </div>
-                    </figure>
-                    <figure className={styles.project1}>
-                        <Image
-                            src={'/petLover.png'}
-                            alt={'petLover website'}
-                            className={styles.petLover}
-                            width={'500'}
-                            height={'200'} 
-                            layout="responsive"/>
-                        <h1>Pet Lover</h1>
-                        <h3>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a
-                            type specimen book.
-                        </h3>
-
-                        <div className={styles.buttons}>
-                            <button className={styles.sButton}>Código</button>
-                            <button className={styles.sButton}>Website</button>
+                            <a href="https://github.com/raulhenrique-x3/Formulario-condicional---ReactJs"><button className={styles.sButton}>Código</button></a>
+                            <a href="https://formulario-condicional-react-js.vercel.app/"><button className={styles.sButton}>Website</button></a>
                         </div>
                     </figure>
                 </div>
