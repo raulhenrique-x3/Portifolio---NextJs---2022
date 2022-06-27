@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '../components/header/Header'
 import FirstSect from '../components/section01/FirstSect'
 import SecondSect from '../components/section02/SecondSect'
+import ThirdSect from '../components/section03/ThirdSect'
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <Header/>
       <FirstSect/>
       <SecondSect/>
+      <ThirdSect/>
     </div>
   )
 }
