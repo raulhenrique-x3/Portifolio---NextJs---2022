@@ -2,7 +2,9 @@ $primary-color: #266398;
 $secondary-color: #e6e8e3;
 $thirdy-color: #343838;
 $txt-shadow-color: 2px 2px #0000001a;
+$txt-shadow-color-02: 1px 1px #0000005a;
 $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$primary-font: 'Anek Malayalam', sans-serif;
 
 
 .thirdSect {
@@ -10,20 +12,32 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(../../public/wave-haikei.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
+}
+
+.tests{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    z-index: -1;
+    background-color: $primary-color;
+    right: 0;
+
+}
+
+.svgBack{
+    width: 100%;
+    background-color: $secondary-color;
+
 }
 
 .thirdSect>p {
-    margin-top: 18px;
-    font-size: 2rem;
-    text-align: start;
-    font-family: Arial, Helvetica, sans-serif;
-    color: $primary-color;
-    font-weight: 800;
+    font-family: $primary-font;
     text-shadow: $txt-shadow-color;
+    font-size: clamp(32px, 2.5vw, 38px);
+    font-weight: 800;
+    color: $primary-color;
+    text-align: center;
     padding: 8px;
 }
 
@@ -48,18 +62,26 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
 }
 
 .myInfo>p {
+    border-radius: 25px;
+    box-shadow: $box-shadow;
+    background-color: #6464642a;
+    backdrop-filter: blur(2px);
     padding: 8px;
     text-align: start;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: $txt-shadow-color;
-    color: #000000;
+    text-shadow: $txt-shadow-color-02;
+    color: #000;
+    font-weight: 700;
+    opacity: 0.9;
 }
 
 .myInfo>.iconList {
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -91,6 +113,7 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 100%;
     text-align: center;
     justify-content: space-around;
+    
 }
 
 .test>p {
@@ -98,6 +121,8 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size: 0.8rem;
     text-shadow: $txt-shadow-color;
     color: #000;
+    text-align: -webkit-match-parent;
+    padding: 0 8px 0;
 }
 
 .biLightbulb {
@@ -116,20 +141,16 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color: rgb(0, 166, 255);
 }
 
-.svgOnd {
-    position: relative;
-    width: 100%;
-}
 
-@media (min-width: 768px) {
-
-    .thirdSect {
-        background-image: url(../../public/wave-haikei169.png);
-    }
+@media (min-width: 620px) {
 
     .thirdSectInfo {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .thirdSect>p {
+        text-align: start;
     }
 
     .listIcon {
@@ -139,13 +160,17 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     .myInfo>p {
-        font-size: clamp(10px, 2.6vw, 18px);
+        font-size: clamp(10px, 2.1vw, 28px);
         padding: 16px;
         text-align: center;
     }
 
     .mySkills>p {
         font-size: clamp(22px, 2.4vw, 38px);
+    }
+
+    .tests{
+        width: 100%;
     }
 
     .myPhoto0 {

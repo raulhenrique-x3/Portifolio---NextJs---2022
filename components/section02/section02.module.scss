@@ -18,7 +18,7 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-size: clamp(32px, 2.5vw, 38px);
     font-weight: 800;
     color: $secondary-color;
-    text-align: start;
+    text-align: center;
     padding: 8px;
 }
 
@@ -72,7 +72,7 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 .figCont>h3 {
     font-size: clamp(14px, 2vw, 18px);
-    font-weight: 100;
+    font-weight: 600;
     opacity: 0.6;
 }
 
@@ -93,7 +93,7 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     box-shadow: $box-shadow
 }
 
-@media (min-width: 768px) {
+@media (min-width: 620px) {
 
     .myProjects {
         flex-direction: row;
@@ -103,6 +103,10 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     .project1 {
         width: 40%;
+    }
+
+    .sectTwo>p {
+        text-align: start;
     }
 
     .figCont {
