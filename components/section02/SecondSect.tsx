@@ -5,7 +5,7 @@ import Image from "next/image";
 const SecondSect: NextPage = () => {
     return (
         <>
-            <section className={styles.sectTwo}>
+            <section className={styles.sectTwo} id='projects'>
                 <p>Projetos</p>
 
                 <div className={styles.myProjects}>

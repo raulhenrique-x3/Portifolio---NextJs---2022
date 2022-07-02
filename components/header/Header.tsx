@@ -11,7 +11,7 @@ const Header: NextPage = () => {
     return (
         <>
             <header className={styles.header}>
-                <div className={styles.logoMenu}>
+                <div data-nosnippet className={styles.logoMenu}>
                     <Image
                         src={'/logoRH.png'}
                         className={'logoPic'}
@@ -26,13 +26,13 @@ const Header: NextPage = () => {
                     </button>
                 </div>
 
-                <div className={active ? styles.active : styles.unactive}>
+                <div data-nosnippet className={active ? styles.active : styles.unactive}>
                     <nav className={styles.navMenu}>
                         <ul
                             className={styles.navList}>
-                            <li className={styles.liList}>Quem sou eu?</li>
-                            <li className={styles.liList}>Projetos</li>
-                            <li className={styles.liList}>Contatos</li>
+                            <a href="#projects"><li className={styles.liList}>Projetos</li></a>
+                            <a href="#whoim"><li className={styles.liList}>Quem sou eu?</li></a>
+                            <a href="#contacts"><li className={styles.liList}>Contatos</li></a>
                         </ul>
 
                     </nav>

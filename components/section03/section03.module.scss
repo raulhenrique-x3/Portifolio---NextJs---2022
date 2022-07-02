@@ -1,23 +1,27 @@
 $primary-color: #266398;
 $secondary-color: #e6e8e3;
 $thirdy-color: #343838;
+$fourth-color: #000;
+$fifth-color: #fff;
 $txt-shadow-color: 2px 2px #0000001a;
 $txt-shadow-color-02: 1px 1px #0000005a;
 $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-$primary-font: 'Anek Malayalam', sans-serif;
+$primary-font: 'Noto Sans Display', sans-serif;
+$secondary-font: 'Quicksand', Arial, Helvetica, sans-serif;
 
 
 .thirdSect {
     width: 100%;
-    height: 100vh;
+    height: 96vh;
     display: flex;
     flex-direction: column;
-    
+    margin-top: 16vh;
+
 }
 
-.tests{
+.tests {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     position: absolute;
     z-index: -1;
     background-color: $primary-color;
@@ -25,7 +29,7 @@ $primary-font: 'Anek Malayalam', sans-serif;
 
 }
 
-.svgBack{
+.svgBack {
     width: 100%;
     background-color: $secondary-color;
 
@@ -33,7 +37,7 @@ $primary-font: 'Anek Malayalam', sans-serif;
 
 .thirdSect>p {
     font-family: $primary-font;
-    text-shadow: $txt-shadow-color;
+    // text-shadow: $txt-shadow-color;
     font-size: clamp(32px, 2.5vw, 38px);
     font-weight: 800;
     color: $primary-color;
@@ -62,30 +66,46 @@ $primary-font: 'Anek Malayalam', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
 
 .myInfo>p {
     border-radius: 25px;
     box-shadow: $box-shadow;
-    background-color: #6464642a;
-    backdrop-filter: blur(2px);
+    background-color: $fifth-color;
     padding: 8px;
     text-align: start;
     font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: $txt-shadow-color-02;
-    color: #000;
-    font-weight: 700;
-    opacity: 0.9;
+    font-family: $secondary-font;
+    color: #333;
+    font-weight: 600;
+    margin: 0 24px 0 24px;
 }
 
-.myInfo>.iconList {
-    
+.iconList {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 8px 0 8px 0;
+}
+
+.iconCreativy {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconCreativy>p {
+    font-family: $secondary-font;
+    font-size: 16px;
+    font-weight: 500;
+    // text-shadow: $txt-shadow-color;
+    color: $fifth-color;
+    text-align: center;
+    padding: 8px 0;
 }
 
 
@@ -101,28 +121,19 @@ $primary-font: 'Anek Malayalam', sans-serif;
 
 .mySkills>p {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: $txt-shadow-color;
+    font-family: $secondary-font;
+    // text-shadow: $txt-shadow-color;
     font-weight: 800;
     font-size: 1rem;
-    color: $thirdy-color;
+    color: $fifth-color;
 }
 
-.test {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    justify-content: space-around;
-    
+.hardskill{
+    margin-top: 50px;
 }
 
-.test>p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
-    text-shadow: $txt-shadow-color;
-    color: #000;
-    text-align: -webkit-match-parent;
-    padding: 0 8px 0;
+.softSkill{
+    margin-top: 20px;
 }
 
 .biLightbulb {
@@ -138,7 +149,7 @@ $primary-font: 'Anek Malayalam', sans-serif;
 }
 
 .biPeople {
-    color: rgb(0, 166, 255);
+    color: #00a6ff;
 }
 
 
@@ -160,16 +171,17 @@ $primary-font: 'Anek Malayalam', sans-serif;
     }
 
     .myInfo>p {
-        font-size: clamp(10px, 2.1vw, 28px);
+        font-size: clamp(17px, 1.2vw, 19px);
         padding: 16px;
         text-align: center;
+        width: 95%;
     }
 
     .mySkills>p {
         font-size: clamp(22px, 2.4vw, 38px);
     }
 
-    .tests{
+    .tests {
         width: 100%;
     }
 
