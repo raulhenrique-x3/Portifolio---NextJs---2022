@@ -31,6 +31,10 @@ $box-shadow-color: 1px 1px #0000001a;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 18px;
     text-shadow: $txt-shadow-color;
+
+    @media (min-width: 2560px) {
+        font-size: 4rem;
+    }
 }
 
 .cvButton {
@@ -44,10 +48,11 @@ $box-shadow-color: 1px 1px #0000001a;
     box-shadow: $box-shadow-color;
     display: flex;
     justify-content: center;
-}
 
-.squareFill {
-    margin-left: 4px;
+    @media (min-width: 2560px) {
+        padding: clamp(24px, 2vw, 48px);
+        font-size: 2rem;
+    }
 }
 
 .progScreen {
@@ -61,21 +66,7 @@ $box-shadow-color: 1px 1px #0000001a;
     filter: blur(4px);
 }
 
-.cV {
-    background-color: $secondary-color;
-}
-
-.aRef {
-    color: $primary-color;
-}
-
-.cvPtBr>p,
-.cvEn>p {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: clamp(9px, 2.5vw, 18px);
-}
-
-.cvPtBr:hover,
-.cvEn:hover {
-    background-color: $button-color;
+.curriculos {
+    display: flex;
+    gap: 16px;
 }

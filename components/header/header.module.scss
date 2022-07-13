@@ -20,6 +20,10 @@ $primary-font: 'Anek Malayalam', sans-serif;
     background-color: $primary-color;
     width: 100%;
     padding: 18px;
+
+    @media (min-width: 620px) {
+        flex-direction: row;
+    }
 }
 
 .logoMenu {
@@ -27,6 +31,14 @@ $primary-font: 'Anek Malayalam', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-width: 620px) {
+        width: unset;
+    }
+
+    @media (min-width: 2560px){
+        width: 256px;
+    }
 }
 
 .button {
@@ -41,22 +53,46 @@ $primary-font: 'Anek Malayalam', sans-serif;
     border-radius: 10px;
     box-shadow: $box-shadow-1;
     display: block;
+
+    @media (min-width: 620px) {
+        display: none;
+    }
 }
 
 .unactive {
     transition: height 0.3s;
     height: 0;
     overflow: hidden;
+
+    @media (min-width: 620px) {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .active {
     transition: height 0.3s;
     height: 180px; //Altura max do elemento a ser exibido
     overflow: hidden;
+
+    @media (min-width: 620px) {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .navMenu {
     margin-top: 18px;
+
+    @media (min-width: 620px) {
+        margin-top: 0;
+    }
 }
 
 .navList {
@@ -65,6 +101,17 @@ $primary-font: 'Anek Malayalam', sans-serif;
     flex-direction: column;
     justify-content: flex-start;
     gap: 18px;
+
+    @media (min-width: 620px) {
+        flex-direction: row;
+        gap: clamp(24px, 25vw, 72px);
+    }
+}
+
+.liList {
+    @media (min-width: 2560px){
+        font-size: 48px;
+    }
 }
 
 .navMenu>ul {
@@ -89,48 +136,32 @@ $primary-font: 'Anek Malayalam', sans-serif;
     gap: 18px;
 }
 
-.linkBiLink,
-.linkBiGit,
-.linkBiWpp {
-    color: #000;
+.biLinkedin,
+.biGithub,
+.biWhatsapp {
     width: 32px;
     height: 32px;
+
+    @media (min-width: 620px) {
+        width: clamp(24px, 15vw, 28px);
+    }
+
+    @media (min-width: 2560px){
+        width: 64px;
+        height: 64px;
+    }
 }
 
-.linkBiLink {
+.biLinkedin {
     color: $sixty-color;
 }
 
-.linkBiWpp {
+.biWhatsapp {
     color: $whats-color;
 }
 
 @media (min-width: 620px) {
-
-    .unactive,
-    .active {
-        width: 100vw;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .header,
-    .navList {
-        flex-direction: row;
-    }
-
-    .logoMenu {
-        width: unset;
-    }
-
-    .navList {
-        gap: clamp(24px, 25vw, 72px);
-    }
-
-    .navList>li {
+    .liList {
         margin-top: 0;
     }
 
@@ -148,12 +179,6 @@ $primary-font: 'Anek Malayalam', sans-serif;
         margin-top: 0;
     }
 
-    .biLinkedin,
-    .biGithub,
-    .biWhatsapp {
-        width: clamp(24px, 15vw, 28px);
-    }
-
     .biLinkedin:hover,
     .biGithub:hover,
     .biWhatsapp:hover {
@@ -161,11 +186,6 @@ $primary-font: 'Anek Malayalam', sans-serif;
         border-bottom: 1px solid $fourth-color;
     }
 
-    .navMenu {
-        margin-top: 0;
-    }
-
-    .biList,
     .bixlg {
         display: none;
     }
