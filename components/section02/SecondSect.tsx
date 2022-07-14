@@ -10,8 +10,8 @@ const SecondSect: NextPage = () => {
                 <div className={styles.myProjects}>
                     <figure className={styles.project1}>
                         <Image
-                            src={'/Movieshop - ReactJs.png'}
-                            alt={'petLover website'}
+                            src={'/movieshop.png'}
+                            alt={'movieshop web app'}
                             className={styles.petLover}
                             width={'500'}
                             height={'200'}
