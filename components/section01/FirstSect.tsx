@@ -17,7 +17,7 @@ const FirstSect: NextPage = () => {
                         height={100} />
                     <p className={styles.iAm}>Opa! Meu nome é Raul e sou um desenvolvedor Front-End</p>
                     <div className={styles.curriculos}>
-                        <a href="/CvDevFrontEnd.pdf" download={'cvRaul-Front-End.pdf'} className={styles.aRef}>
+                        <a href="/CvDevFrontEnd.pdf" download={'CvDevFrontEnd.pdf'} className={styles.aRef}>
                             <button className={styles.cvButton}>Currículo</button>
                         </a>
                         <a href="/English-Cv-DevFront-End.pdf" download={'Resume-Raul-Front-End'} className={styles.aRef}>
