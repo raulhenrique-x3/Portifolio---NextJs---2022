@@ -10,18 +10,19 @@ const Home: NextPage = () => {
   return (
     <main className={'container'}>
       <Head>
-        <meta charSet="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Front-End Developer Website" />
-        <link rel='icon' type='image/x-icon' href='/logotitle.png'/>
+        <meta name="google-site-verification" content="xRK8Fmlx2OrV0hN-K7k9lpxVBnamDLzWrUUXu0wPNxQ" />
+        <link rel='icon' type='image/x-icon' href='/logotitle.png' />
         <title>Raul Henrique - Desenvolvedor Front-End</title>
       </Head>
 
-      <Header/>
-      <FirstSect/>
-      <SecondSect/>
-      <ThirdSect/>
-      <FourthSect/>
+      <Header />
+      <FirstSect />
+      <SecondSect />
+      <ThirdSect />
+      <FourthSect />
     </main>
   )
 }
