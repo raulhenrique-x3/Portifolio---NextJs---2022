@@ -1,0 +1,23 @@
+$secondary-color: #e6e8e3;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: $secondary-color;
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  color: unset;
+}
