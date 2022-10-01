@@ -6,7 +6,6 @@ const nextConfig = {
 
 module.exports = nextConfig;
 module.exports = {
-  distDir: "build",
   reactStrictMode: true,
   webpack: (config) => {
     config.module.rules.push({
