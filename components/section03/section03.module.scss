@@ -100,13 +100,13 @@ $secondary-font: "Quicksand", Arial, Helvetica, sans-serif;
 
 .iconList {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 16px;
   align-items: center;
   margin: 8px 0 8px 0;
 }
 
 .iconCreativy {
-  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -146,6 +146,10 @@ $secondary-font: "Quicksand", Arial, Helvetica, sans-serif;
     width: 128px;
     height: 128px;
   }
+}
+
+.listIcon:hover {
+  cursor: pointer;
 }
 
 .mySkills > p {
