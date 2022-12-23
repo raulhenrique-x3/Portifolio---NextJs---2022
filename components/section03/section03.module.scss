@@ -101,9 +101,15 @@ $secondary-font: "Quicksand", Arial, Helvetica, sans-serif;
 .iconList {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  flex-direction: column;
+  gap: 12px;
   align-items: center;
   margin: 8px 0 8px 0;
+}
+
+.iconBox {
+  display: flex;
+  gap: 4px;
 }
 
 .iconCreativy {

@@ -10,13 +10,42 @@ const SecondSect: NextPage = () => {
         <div className={styles.myProjects}>
           <figure className={styles.project1}>
             <Image
+              src={"/goldenDuelist.png"}
+              alt={
+                "Projeto Golden Duelist, basead no cardGame Yu-Gi-Oh, criado com React.Js, SASS, Typescript e Redux-Toolkit"
+              }
+              className={styles.goldenDuelist}
+              width={"500"}
+              height={"200"}
+              layout="responsive"
+              objectFit={"contain"}
+            />
+            <div className={styles.figCont}>
+              <p className={styles.projectName}>Golden Duelist</p>
+              <h3>
+                O site criado com React.js, SASS, Typescript e Redux-Toolik sobre o cardgame Yu-Gi-Oh! é um marketplace
+                responsivo e interativo. Ele permite aos usuários pesquisar cartas, trocar cartas e analisar preços para
+                essas trocas.
+              </h3>
+            </div>
+            <div className={styles.buttons}>
+              <a target="_blank" rel="noreferrer" href="https://github.com/raulhenrique-x3/Golden-Duelist">
+                <button className={styles.sButton}>Código</button>
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://golden-duelist.vercel.app/">
+                <button className={styles.sButton}>Website</button>
+              </a>
+            </div>
+          </figure>
+          <figure className={styles.project1}>
+            <Image
               src={"/movieshop.png"}
               alt={"movieshop web app"}
               className={styles.petLover}
               width={"500"}
               height={"200"}
               layout={"responsive"}
-              objectFit={"cover"}
+              objectFit={"contain"}
             />
             <div className={styles.figCont}>
               <p className={styles.projectName}>Movie App</p>
@@ -35,36 +64,7 @@ const SecondSect: NextPage = () => {
               </a>
             </div>
           </figure>
-          <figure className={styles.project1}>
-            <Image
-              src={"/guildDevCha.png"}
-              alt={"Guilda Dev Challenge website"}
-              className={styles.uxForm}
-              width={"500"}
-              height={"200"}
-              layout="responsive"
-              objectFit={"cover"}
-            />
-            <div className={styles.figCont}>
-              <p className={styles.projectName}>React Challeng Guilda Dev</p>
-              <h3>
-                Este é o 1º Desafio React do Guild Dev! Neste desafio, nosso projeto foi criar um quiz com 10 questões
-                de verdadeiro ou falso usando o ReactJs, Typescript, Axios, SCSS, Chakra-Ui e React-Router-DOM.
-              </h3>
-            </div>
-            <div className={styles.buttons}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/raulhenrique-x3/1st-React-Challeng-Guilda-Dev"
-              >
-                <button className={styles.sButton}>Código</button>
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://guilda-dev-challenge.vercel.app/">
-                <button className={styles.sButton}>Website</button>
-              </a>
-            </div>
-          </figure>
+
           <figure className={styles.project1}>
             <Image
               src={"/bolaOval.png"}
@@ -73,7 +73,7 @@ const SecondSect: NextPage = () => {
               width={"500"}
               height={"200"}
               layout={"responsive"}
-              objectFit={"cover"}
+              objectFit={"contain"}
             />
             <div className={styles.figCont}>
               <p className={styles.projectName}>Projeto Bola Oval</p>
@@ -98,7 +98,7 @@ const SecondSect: NextPage = () => {
               width={"500"}
               height={"200"}
               layout="responsive"
-              objectFit={"cover"}
+              objectFit={"contain"}
             />
             <div className={styles.figCont}>
               <p className={styles.projectName}>Academia Top Treino</p>
@@ -121,7 +121,7 @@ const SecondSect: NextPage = () => {
               width={"500"}
               height={"200"}
               layout={"responsive"}
-              objectFit={"cover"}
+              objectFit={"contain"}
             />
             <div className={styles.figCont}>
               <p className={styles.projectName}>Henrique Advocacia</p>
@@ -146,7 +146,7 @@ const SecondSect: NextPage = () => {
               width={"500"}
               height={"200"}
               layout="responsive"
-              objectFit={"cover"}
+              objectFit={"contain"}
             />
             <div className={styles.figCont}>
               <p className={styles.projectName}>Yu-Gi-Oh Card of The Day</p>

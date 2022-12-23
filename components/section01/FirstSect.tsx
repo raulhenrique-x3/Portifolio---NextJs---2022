@@ -14,14 +14,8 @@ const FirstSect: NextPage = () => {
           <h1 className={styles.iAm}>Opa! Meu nome é Raul e sou um desenvolvedor Front-End</h1>
           <div className={styles.curriculos}>
             <Tooltip description="Download" direction="bottom">
-              <a href="/rauldevfrontend2022.pdf" download={"Raul - CV - Dev Front-End.pdf"} className={styles.aRef}>
+              <a href="/curriculo-front-end.pdf" target="_blank" className={styles.aRef}>
                 <button className={styles.cvButton}>Currículo</button>
-              </a>
-            </Tooltip>
-
-            <Tooltip description="Download" direction="bottom">
-              <a href="/English-Cv-DevFront-End.pdf" download={"Resume-Raul-Front-End"} className={styles.aRef}>
-                <button className={styles.cvButton}>Resume (EN)</button>
               </a>
             </Tooltip>
           </div>
