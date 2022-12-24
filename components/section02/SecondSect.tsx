@@ -67,13 +67,37 @@ const SecondSect: NextPage = () => {
 
           <figure className={styles.project1}>
             <Image
+              src={"/reactNativeApp.svg"}
+              alt={"React Native Shop App"}
+              className={styles.ygoApi}
+              width={"500"}
+              height={"200"}
+              layout="responsive"
+              objectFit={"cover"}
+            />
+            <div className={styles.figCont}>
+              <p className={styles.projectName}>App-Shop</p>
+              <h3>
+                Projeto desenvolvido usando React-Native, Typescript, Node.Js (API) e MySql (Database), é um CRUD onde o
+                usuário pode se cadastrar por meio de login e fazer o cadastro de aparelhos eletrônicos.
+              </h3>
+            </div>
+            <div className={styles.buttons}>
+              <a target="_blank" rel="noreferrer" href="https://github.com/raulhenrique-x3/react-native-shop-app">
+                <button className={styles.sButton}>Código</button>
+              </a>
+            </div>
+          </figure>
+
+          <figure className={styles.project1}>
+            <Image
               src={"/bolaOval.png"}
               alt={"Projeto bola oval"}
               className={styles.petLover}
               width={"500"}
               height={"200"}
               layout={"responsive"}
-              objectFit={"contain"}
+              objectFit={"cover"}
             />
             <div className={styles.figCont}>
               <p className={styles.projectName}>Projeto Bola Oval</p>
@@ -98,11 +122,11 @@ const SecondSect: NextPage = () => {
               width={"500"}
               height={"200"}
               layout="responsive"
-              objectFit={"contain"}
+              objectFit={"cover"}
             />
             <div className={styles.figCont}>
               <p className={styles.projectName}>Academia Top Treino</p>
-              <h3>Trabalho freelancer feito com NextJs e SCSS.</h3>
+              <h3>Trabalho freelancer feito com Next.Js e SCSS.</h3>
             </div>
             <div className={styles.buttons}>
               <a target="_blank" rel="noreferrer" href="https://github.com/raulhenrique-x3/Top-Treino-Next-Js">
@@ -121,7 +145,7 @@ const SecondSect: NextPage = () => {
               width={"500"}
               height={"200"}
               layout={"responsive"}
-              objectFit={"contain"}
+              objectFit={"cover"}
             />
             <div className={styles.figCont}>
               <p className={styles.projectName}>Henrique Advocacia</p>
@@ -134,36 +158,6 @@ const SecondSect: NextPage = () => {
                 </button>
               </a>
               <a target="_blank" rel="noreferrer" href="https://henrique-advocacia.vercel.app/">
-                <button className={styles.sButton}>Website</button>
-              </a>
-            </div>
-          </figure>
-          <figure className={styles.project1}>
-            <Image
-              src={"/ygoApi.png"}
-              alt={"ygoApi website"}
-              className={styles.ygoApi}
-              width={"500"}
-              height={"200"}
-              layout="responsive"
-              objectFit={"contain"}
-            />
-            <div className={styles.figCont}>
-              <p className={styles.projectName}>Yu-Gi-Oh Card of The Day</p>
-              <h3>
-                Esse Webapp foi criado com ReactJs, consumindo a API do Yu-Gi-Oh! para que seja mostrado ao usuário um
-                card aleatório do cardgame.
-              </h3>
-            </div>
-            <div className={styles.buttons}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/raulhenrique-x3/Yu-Gi-Oh-Card-of-the-Day-API-"
-              >
-                <button className={styles.sButton}>Código</button>
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://yu-gi-oh-card-of-the-day-api.vercel.app/">
                 <button className={styles.sButton}>Website</button>
               </a>
             </div>
