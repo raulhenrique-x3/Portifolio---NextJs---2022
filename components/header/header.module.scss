@@ -165,6 +165,24 @@ $primary-font: "Anek Malayalam", sans-serif;
   color: $whats-color;
 }
 
+.flagBrazil {
+  object-fit: contain;
+  width: 32px;
+  height: 32px;
+  background-color: $whats-color;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.flagUsa {
+  object-fit: contain;
+  width: 32px;
+  height: 32px;
+  background-color: $sixty-color;
+  border-radius: 50%;
+  color: #fff;
+}
+
 @media (min-width: 620px) {
   .liList {
     margin-top: 0;
@@ -193,6 +211,10 @@ $primary-font: "Anek Malayalam", sans-serif;
 
   .bixlg {
     display: none;
+  }
+
+  .changeLanguange {
+    margin-left: 16px;
   }
 
   .flagButton {

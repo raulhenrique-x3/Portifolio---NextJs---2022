@@ -37,8 +37,8 @@ const ThirdSect: NextPage = () => {
             )}
             {language ? (
               <p className={styles.aboutMeP}>
-                I'm currently studying Systems Analysis and Development at the Federal Institute of Science and
-                Technology in my city, I'm 22 years old and I love technology a lot! I like to help people with what I
+                Im currently studying Systems Analysis and Development at the Federal Institute of Science and
+                Technology in my city, Im 22 years old and I love technology a lot! I like to help people with what I
                 can and I also like to always be learning new things.
                 <br />
                 <br />
@@ -48,7 +48,7 @@ const ThirdSect: NextPage = () => {
                 about back-end, Linux and its distributions.
                 <br />
                 <br />
-                Now I'm a Front-End developer with ambitions to become a senior full-stack developer!
+                Now Im a Front-End developer with ambitions to become a senior full-stack developer!
               </p>
             ) : (
               <p className={styles.aboutMeP}>

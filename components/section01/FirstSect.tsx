@@ -15,7 +15,7 @@ const FirstSect: NextPage = () => {
         <div className={styles.infoData}>
           <Image src={myPhoto} alt={"Photo of my face"} className={styles.myPhoto} width={100} height={100} />
           {language ? (
-            <h1 className={styles.iAm}>Hello! My name is Raul and i'm a Front-End Developer</h1>
+            <h1 className={styles.iAm}>Hello! My name is Raul and im a Front-End Developer</h1>
           ) : (
             <h1 className={styles.iAm}>Opa! Meu nome é Raul e sou um desenvolvedor Front-End</h1>
           )}
