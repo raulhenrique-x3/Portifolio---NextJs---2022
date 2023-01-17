@@ -17,16 +17,16 @@ $secondary-font: "Quicksand", Arial, Helvetica, sans-serif;
   margin-top: 32px;
 }
 
-.thirdSect > p {
+.aboutMe {
   font-family: $primary-font;
   font-size: clamp(32px, 2.5vw, 38px);
   font-weight: 800;
-  color: $primary-color;
+  color: $secondary-color;
   text-align: center;
   padding: 8px;
 
-  @media (min-width: 2560px) {
-    font-size: 5rem;
+  @media (min-width: 620px) {
+    font-size: clamp(16px, 2.2vw, 28px);
   }
 }
 
@@ -64,14 +64,14 @@ $secondary-font: "Quicksand", Arial, Helvetica, sans-serif;
   justify-content: space-around;
 }
 
-.aboutMe {
-  text-align: center;
-  color: #e6e8e3;
+// .aboutMe {
+//   text-align: center;
+//   color: #e6e8e3;
 
-  @media (min-width: 620px) {
-    font-size: clamp(16px, 2.2vw, 28px);
-  }
-}
+//   @media (min-width: 620px) {
+//     font-size: clamp(16px, 2.2vw, 28px);
+//   }
+// }
 
 .aboutMeP {
   border-radius: 25px;

@@ -107,17 +107,17 @@ $primary-font: "Anek Malayalam", sans-serif;
   }
 }
 
-.liList {
+.liList > a {
   @media (min-width: 2560px) {
     font-size: 48px;
   }
 }
 
-.navMenu > ul {
+.navMenu > ul > a {
   font-family: $primary-font;
 }
 
-.navList > a {
+.liList {
   border-bottom: 1px #0000001a solid;
   font-size: clamp(16px, 2vw, 18px);
   text-align: center;
@@ -149,6 +149,12 @@ $primary-font: "Anek Malayalam", sans-serif;
     width: 64px;
     height: 64px;
   }
+}
+
+.flagButton {
+  border: none;
+  background: none;
+  object-fit: cover;
 }
 
 .biLinkedin {
@@ -187,5 +193,16 @@ $primary-font: "Anek Malayalam", sans-serif;
 
   .bixlg {
     display: none;
+  }
+
+  .flagButton {
+    border: none;
+    background: none;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .flag {
+    object-fit: contain;
   }
 }

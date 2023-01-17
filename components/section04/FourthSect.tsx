@@ -1,11 +1,13 @@
 import { NextPage } from "next";
 import styles from "../section04/section04.module.scss";
+import useLanguage from "../../src/hooks/useLanguage";
 
 const Section04: NextPage = () => {
+  const { language } = useLanguage();
   return (
     <section className={styles.fourthSect} id="contacts">
       <div className={styles.fourthSectStyle}>
-        <p className={styles.contacts}>CONTATOS</p>
+        {language ? <p className={styles.contacts}>CONTACT ME</p> : <p className={styles.contacts}>CONTATOS</p>}
         <div className={styles.socialContacts}>
           <a
             target="_blank"

@@ -2,12 +2,14 @@ import { NextPage } from "next";
 import { Tooltip } from "../Tooltip/Tooltip";
 import styles from "../section03/section03.module.scss";
 import Image from "next/image";
+import useLanguage from "../../src/hooks/useLanguage";
 
 const ThirdSect: NextPage = () => {
+  const { language } = useLanguage();
+
   return (
     <>
-      <section className={styles.thirdSect} id="whoim">
-        <p>Quem sou eu?</p>
+      <section className={styles.thirdSect}>
         <svg className={styles.svgBack} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#266398"
@@ -27,22 +29,44 @@ const ThirdSect: NextPage = () => {
             />
           </div>
 
-          <div className={styles.myInfo}>
-            <h2 className={styles.aboutMe}>Um pouco sobre mim</h2>
-            <p className={styles.aboutMeP}>
-              Atualmente estou cursando Análise e Desenvolvimento de Sistemas no Instituto Federal de Ciência e
-              Tecnologia da minha cidade, tenho 22 anos e muito amor pela área de tecnologia! Gosto de ajudar as pessoas
-              com o que posso e também gosto de sempre estar aprendendo coisas novas.
-              <br />
-              <br />
-              Minha história com a área Tech começa por volta de 2013 onde eu me interessei pelo estudo do web design,
-              em 2015 fiz um breve estudo sobre Ruby voltado para a área de back-end, porém, a área que me prendeu nesse
-              período foi a de segurança da informação, onde tive a oportunidade de estudar um pouco mais sobre
-              back-end, o Linux e suas distribuições.
-              <br />
-              <br />
-              Agora sou um desenvolvedor Front-End que tem pretensões de se tornar um desenvolvedor full-stack sênior!
-            </p>
+          <div className={styles.myInfo} id="whoim">
+            {language ? (
+              <h2 className={styles.aboutMe}>A little about me</h2>
+            ) : (
+              <h2 className={styles.aboutMe}>Um pouco sobre mim</h2>
+            )}
+            {language ? (
+              <p className={styles.aboutMeP}>
+                I'm currently studying Systems Analysis and Development at the Federal Institute of Science and
+                Technology in my city, I'm 22 years old and I love technology a lot! I like to help people with what I
+                can and I also like to always be learning new things.
+                <br />
+                <br />
+                My history with the Tech area starts around 2013 when I became interested in the study of web design, in
+                2015 I did a brief study on Ruby focused on the back-end area, however, the area that held me back
+                during this period was that of information security, where I had the opportunity to study a little more
+                about back-end, Linux and its distributions.
+                <br />
+                <br />
+                Now I'm a Front-End developer with ambitions to become a senior full-stack developer!
+              </p>
+            ) : (
+              <p className={styles.aboutMeP}>
+                Atualmente estou cursando Análise e Desenvolvimento de Sistemas no Instituto Federal de Ciência e
+                Tecnologia da minha cidade, tenho 22 anos e muito amor pela área de tecnologia! Gosto de ajudar as
+                pessoas com o que posso e também gosto de sempre estar aprendendo coisas novas.
+                <br />
+                <br />
+                Minha história com a área Tech começa por volta de 2013 onde eu me interessei pelo estudo do web design,
+                em 2015 fiz um breve estudo sobre Ruby voltado para a área de back-end, porém, a área que me prendeu
+                nesse período foi a de segurança da informação, onde tive a oportunidade de estudar um pouco mais sobre
+                back-end, o Linux e suas distribuições.
+                <br />
+                <br />
+                Agora sou um desenvolvedor Front-End que tem pretensões de se tornar um desenvolvedor full-stack sênior!
+              </p>
+            )}
+
             <div className={styles.mySkills}>
               <p className={styles.hardskill}>Hard skills</p>
             </div>
