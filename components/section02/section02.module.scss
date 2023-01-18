@@ -84,7 +84,7 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .projectName,
-.figCont > h3 {
+.description {
   font-family: $primary-font;
   padding: 9px;
   text-align: center;
@@ -100,7 +100,7 @@ $box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 }
 
-.figCont > h3 {
+.description {
   font-size: clamp(14px, 2vw, 18px);
   font-weight: 600;
   opacity: 0.6;

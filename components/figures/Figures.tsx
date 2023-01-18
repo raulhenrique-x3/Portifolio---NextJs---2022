@@ -27,7 +27,7 @@ export const Figure: React.FC<IFigure> = ({ src, alt, title, description, code, 
       />
       <div className={styles.figCont}>
         <p className={styles.projectName}>{title}</p>
-        <h3>{description}</h3>
+        <p className={styles.description}>{description}</p>
       </div>
 
       <div className={styles.buttons}>
