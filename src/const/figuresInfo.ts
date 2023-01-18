@@ -35,7 +35,7 @@ export const figureInfoPtBr = [
   },
 
   {
-    src: "/pbolaOval.svg",
+    src: "/pBolaOval.svg",
     alt: "Projeto criado com uma equipe para aprender desenvolvimento de componentes utilizando o Storybook e também para aprender sobre testes.",
     title: "Projeto Bola Oval",
     description:
@@ -106,7 +106,7 @@ export const figureInfoEn = [
   },
 
   {
-    src: "/pbolaOval.svg",
+    src: "/pBolaOval.svg",
     alt: "Project created with a team to learn component development using Storybook and also to learn about testing.",
     title: "Oval Ball Project",
     description:
