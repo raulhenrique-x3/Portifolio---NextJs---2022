@@ -24,13 +24,17 @@ const FirstSect: NextPage = () => {
             {language ? (
               <Tooltip description="See" direction="bottom">
                 <a href="/cv_front_end_en.pdf" target="_blank" className={styles.aRef}>
-                  <button className={styles.cvButton}>Resume</button>
+                  <button className={styles.cvButton} aria-label="curriculum">
+                    Resume
+                  </button>
                 </a>
               </Tooltip>
             ) : (
               <Tooltip description="Ver" direction="bottom">
                 <a href="/cv_front_end_pt_br.pdf" target="_blank" className={styles.aRef}>
-                  <button className={styles.cvButton}>Currículo</button>
+                  <button className={styles.cvButton} aria-label="curriculum">
+                    Currículo
+                  </button>
                 </a>
               </Tooltip>
             )}

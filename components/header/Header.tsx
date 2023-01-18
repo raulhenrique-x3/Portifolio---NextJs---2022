@@ -28,7 +28,7 @@ const Header: NextPage = () => {
             height={"52"}
           />
 
-          <button onClick={() => setActive(!active)} className={styles.button}>
+          <button onClick={() => setActive(!active)} className={styles.button} aria-label="icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -109,13 +109,13 @@ const Header: NextPage = () => {
         <div className={styles.changeLanguange}>
           {language ? (
             <Tooltip description={"Alterar idioma"} direction="left">
-              <button onClick={() => languageChange()} className={styles.flagButton}>
+              <button onClick={() => languageChange()} className={styles.flagButton} aria-label="icon">
                 <GiBrazilFlag className={styles.flagBrazil} />
               </button>
             </Tooltip>
           ) : (
             <Tooltip description="Change language" direction="left">
-              <button onClick={() => languageChange()} className={styles.flagButton}>
+              <button onClick={() => languageChange()} className={styles.flagButton} aria-label="icon">
                 <GiUsaFlag className={styles.flagUsa} />
               </button>
             </Tooltip>

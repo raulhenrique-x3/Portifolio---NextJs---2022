@@ -33,14 +33,20 @@ export const Figure: React.FC<IFigure> = ({ src, alt, title, description, code, 
       <div className={styles.buttons}>
         <a target="_blank" rel="noreferrer" href={code}>
           {language ? (
-            <button className={styles.sButton}>Code</button>
+            <button className={styles.sButton} aria-label="code">
+              Code
+            </button>
           ) : (
-            <button className={styles.sButton}>Código</button>
+            <button className={styles.sButton} aria-label="code">
+              Código
+            </button>
           )}
         </a>
         {website !== undefined ? (
           <a target="_blank" rel="noreferrer" href={website}>
-            <button className={styles.sButton}>Website</button>
+            <button className={styles.sButton} aria-label="site">
+              Website
+            </button>
           </a>
         ) : (
           <></>
