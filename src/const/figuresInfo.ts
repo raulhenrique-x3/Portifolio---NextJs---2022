@@ -71,9 +71,9 @@ export const figureInfoPtBr = [
 
 export const figureInfoEn = [
   {
-    src: "/goldenDuelist.svg",
+    src: "/the_mafiusus_cat.png",
     alt: "Golden Duelist project, based on the Yu-Gi-Oh cardGame, created with React.Js, SASS, Typescript and Redux-Toolkit. The site created with React.js, SASS, Typescript and Redux-Toolik about the Yu-Gi-Oh! is a responsive and interactive marketplace. It allows users to search for cards, exchange cards and analyze prices for those exchanges.",
-    title: "Golden Duelist",
+    title: "The Mafiususcat",
     description:
       "The site created with React.js, SASS, Typescript and Redux-Toolik about the Yu-Gi-Oh! is a responsive and interactive marketplace. It allows users to search for cards and analyze prices of cards.",
     code: "https://github.com/raulhenrique-x3/Golden-Duelist",
@@ -83,7 +83,30 @@ export const figureInfoEn = [
   },
 
   {
-    src: "/movieApp.svg",
+    src: "/ajudai.png",
+    alt: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
+    title: "Ajudaí",
+    description: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
+    code: "https://github.com/raulhenrique-x3/raul-henrique-advocacia",
+    website: "https://henrique-advocacia.vercel.app/",
+    objectFit: "cover",
+    id: 4,
+  },
+
+  {
+    src: "/golden_duelist.png",
+    alt: "Golden Duelist project, based on the Yu-Gi-Oh cardGame, created with React.Js, SASS, Typescript and Redux-Toolkit. The site created with React.js, SASS, Typescript and Redux-Toolik about the Yu-Gi-Oh! is a responsive and interactive marketplace. It allows users to search for cards, exchange cards and analyze prices for those exchanges.",
+    title: "Golden Duelist",
+    description:
+      "The site created with React.js, SASS, Typescript and Redux-Toolik about the Yu-Gi-Oh! is a responsive and interactive marketplace. It allows users to search for cards and analyze prices of cards.",
+    code: "https://github.com/raulhenrique-x3/Golden-Duelist",
+    website: "https://golden-duelist.vercel.app/",
+    objectFit: "cover",
+    id: 2,
+  },
+
+  {
+    src: "/dev_cine.png",
     alt: "I created this webapp using ReactJs, Typescript, ReactHookForm, ReactRouterDom, TMDB API and Context API.",
     title: "Movie App",
     description:
@@ -91,51 +114,17 @@ export const figureInfoEn = [
     code: "https://github.com/raulhenrique-x3/MovieApp-ReactJs-Typescript",
     website: "https://movieapp-reactjs-ts.vercel.app/",
     objectFit: "cover",
-    id: 2,
-  },
-
-  {
-    src: "/reactNativeApp.svg",
-    alt: "Project developed using React-Native, Typescript, Node.Js (API) and MySql (Database), it is a CRUD where the user can register through login and register electronic devices.",
-    title: "React-Native App-Shop",
-    description:
-      "Project developed using React-Native, Typescript, Node.Js (API) and MySql (Database), it is a CRUD where the user can register through login and register electronic devices.",
-    code: "https://github.com/raulhenrique-x3/react-native-shop-app",
-    objectFit: "cover",
     id: 3,
   },
 
   {
-    src: "/pBolaOval.svg",
-    alt: "Project created with a team to learn component development using Storybook and also to learn about testing.",
-    title: "Oval Ball Project",
-    description:
-      "Project created with a team to learn component development using Storybook and also to learn about testing.",
-    code: "https://github.com/codigo-de-queijo/cheestorybook",
-    objectFit: "cover",
-    id: 4,
-  },
-
-  {
-    src: "/topTreino.svg",
-    alt: "Freelance project developed to meet the needs of the gym in my neighborhood. Made with Next.Js and SCSS.",
-    title: "Top Training Academy",
-    description:
-      "Freelance project developed to meet the needs of the gym in my neighborhood. Made with Next.Js and SCSS.",
-    code: "https://github.com/raulhenrique-x3/Top-Treino-Next-Js",
-    website: "https://top-treino.vercel.app/",
-    objectFit: "cover",
-    id: 5,
-  },
-
-  {
-    src: "/advPage.svg",
+    src: "/henrique_lawyer.png",
     alt: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
     title: "Henrique Advocacy",
     description: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
     code: "https://github.com/raulhenrique-x3/raul-henrique-advocacia",
     website: "https://henrique-advocacia.vercel.app/",
     objectFit: "cover",
-    id: 6,
+    id: 4,
   },
 ];
