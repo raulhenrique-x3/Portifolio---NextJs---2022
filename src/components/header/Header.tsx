@@ -4,29 +4,7 @@ import { useState } from "react";
 import useLanguage from "../../hooks/useLanguage";
 import { BsGithub, BsLinkedin, BsTranslate, BsWhatsapp } from "react-icons/bs";
 import { BiMenu } from "react-icons/bi";
-
-const navLinks = [
-  {
-    name: "Projects",
-    href: "#projects",
-    id: 0,
-  },
-  {
-    name: "About me",
-    href: "#whoim",
-    id: 1,
-  },
-  {
-    name: "Skills",
-    href: "#skills",
-    id: 2,
-  },
-  {
-    name: "Contacts",
-    href: "#contacts",
-    id: 3,
-  },
-];
+import { headerNav } from "../../const/headerNav";
 
 const Header: NextPage = () => {
   const [active, setActive] = useState(false);
@@ -49,7 +27,7 @@ const Header: NextPage = () => {
       <div data-nosnippet className={active ? styles.active : styles.unactive}>
         <nav className={styles.navMenu}>
           <ul className={styles.navList}>
-            {navLinks.map((item) => (
+            {headerNav.map((item) => (
               <li className={styles.liList} key={item.id}>
                 <a href={item.href}>{item.name}</a>
               </li>

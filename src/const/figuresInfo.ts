@@ -72,23 +72,22 @@ export const figureInfoPtBr = [
 export const figureInfoEn = [
   {
     src: "/the_mafiusus_cat.png",
-    alt: "Golden Duelist project, based on the Yu-Gi-Oh cardGame, created with React.Js, SASS, Typescript and Redux-Toolkit. The site created with React.js, SASS, Typescript and Redux-Toolik about the Yu-Gi-Oh! is a responsive and interactive marketplace. It allows users to search for cards, exchange cards and analyze prices for those exchanges.",
+    alt: "Website criado para uma equipe de criadores de NFT com o propósito de divulgar o lançamento da moeda e seus objetivos.",
     title: "The Mafiususcat",
     description:
-      "The site created with React.js, SASS, Typescript and Redux-Toolik about the Yu-Gi-Oh! is a responsive and interactive marketplace. It allows users to search for cards and analyze prices of cards.",
-    code: "https://github.com/raulhenrique-x3/Golden-Duelist",
-    website: "https://golden-duelist.vercel.app/",
+      "Website criado para uma equipe de criadores de NFT com o propósito de divulgar o lançamento da moeda e seus objetivos.",
+    website: "https://mafiusucats.vercel.app/",
     objectFit: "cover",
     id: 1,
   },
 
   {
     src: "/ajudai.png",
-    alt: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
+    alt: "Webapp desenvolvido em projeto na faculdade o Ajudaí tem o propósito de ajudar pessoas que estão em situação de vulnerabilidade social.",
     title: "Ajudaí",
-    description: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
-    code: "https://github.com/raulhenrique-x3/raul-henrique-advocacia",
-    website: "https://henrique-advocacia.vercel.app/",
+    description: "Webapp desenvolvido em projeto na faculdade o Ajudaí tem o propósito de ajudar pessoas que estão em situação de vulnerabilidade social.",
+    code: "https://github.com/Ajudai/projeto",
+    website: "https://ajudai.vercel.app/",
     objectFit: "cover",
     id: 4,
   },

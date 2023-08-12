@@ -2,15 +2,23 @@ import { NextPage } from "next";
 import styles from "../section02/section02.module.scss";
 import { Figure } from "../figures/Figures";
 import useLanguage from "../../hooks/useLanguage";
-import { figureInfoEn, figureInfoPtBr } from "../../const/figuresInfo";
+import { figureInfoEn } from "../../const/figuresInfo";
+import { BiLogoReact } from "react-icons/bi";
 
 const SecondSect: NextPage = () => {
   const { language } = useLanguage();
 
   return (
     <section className={styles.sectTwo} id="projects">
-      <p>Projects</p>
+      <span className={styles.sectTwoTitle}>
+        <BiLogoReact className={styles.reactLogo} />
 
+        <p>Projetos</p>
+      </span>
+
+      <h2>
+        Os melhores serviços de desenvolvimento para as suas melhores ideias!
+      </h2>
       <div className={styles.myProjects}>
         {figureInfoEn.map((info) => (
           <Figure
@@ -21,6 +29,7 @@ const SecondSect: NextPage = () => {
             code={info?.code}
             website={info?.website}
             key={info?.id}
+            objectFit={info?.objectFit}
           />
         ))}
       </div>

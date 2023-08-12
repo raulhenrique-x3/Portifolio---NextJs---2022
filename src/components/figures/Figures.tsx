@@ -1,4 +1,4 @@
-import styles from "../section02/section02.module.scss";
+import styles from "./figure.module.scss";
 import Image from "next/image";
 import useLanguage from "../../hooks/useLanguage";
 import { BsGithub } from "react-icons/bs";
@@ -9,7 +9,7 @@ interface IFigure {
   alt: string;
   title: string;
   description: string;
-  code: string;
+  code?: string;
   website?: string;
   objectFit?: string | any;
 }
@@ -30,8 +30,8 @@ export const Figure: React.FC<IFigure> = ({
         src={src}
         alt={alt}
         className={styles.figureImage}
-        width={"500"}
-        height={"200"}
+        width={"600"}
+        height={"300"}
         layout="responsive"
         objectFit={objectFit}
       />
@@ -41,16 +41,21 @@ export const Figure: React.FC<IFigure> = ({
       </div>
 
       <div className={styles.figureButtonsWrapper}>
-        <a target="_blank" rel="noreferrer" href={code}>
-          <button className={styles.figureButton} aria-label="code">
-            <BsGithub className={styles.buttonIcon} />
-            Code
-          </button>
-        </a>
+        {code !== undefined ? (
+          <a target="_blank" rel="noreferrer" href={code}>
+            <button className={styles.figureButton} aria-label="code">
+              <BsGithub className={styles.buttonIcon} />
+              Code
+            </button>
+          </a>
+        ) : (
+          <></>
+        )}
+
         {website !== undefined ? (
           <a target="_blank" rel="noreferrer" href={website}>
-            <AiOutlineGlobal className={styles.buttonIcon} />
             <button className={styles.figureButton} aria-label="site">
+              <AiOutlineGlobal className={styles.buttonIcon} />
               Website
             </button>
           </a>
