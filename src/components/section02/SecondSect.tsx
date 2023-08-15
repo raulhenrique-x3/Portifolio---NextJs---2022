@@ -12,12 +12,12 @@ const SecondSect: NextPage = () => {
     <section className={styles.sectTwo} id="projects">
       <span className={styles.sectTwoTitle}>
         <BiLogoReact className={styles.reactLogo} />
-
         <p>Projetos</p>
       </span>
 
       <h2>
-        Os melhores serviços de desenvolvimento para as suas melhores ideias!
+        Os melhores serviços de desenvolvimento
+        <br /> para as suas melhores ideias!
       </h2>
       <div className={styles.myProjects}>
         {figureInfoEn.map((info) => (

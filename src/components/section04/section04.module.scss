@@ -1,72 +1,34 @@
-$primary-color: #266398;
-$secondary-color: #e6e8e3;
-$thirdy-color: #343838;
-$whats-color: #25d366;
-$primary-font: "Noto Sans Display", sans-serif;
-$txt-shadow-color: 2px 2px #0000001a;
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
 
-.fourthSect {
+.fourthSectionContainer {
   width: 100%;
-  height: 100%;
-}
-
-.fourthSectStyle {
-  background-color: $secondary-color;
-  width: 100%;
-  height: 10vh;
-  position: absolute;
-  z-index: -1;
-
-  @media (min-width: 620px) {
-    height: 25vh;
-  }
-}
-
-.svgWaveBottom {
-  position: relative;
-  bottom: 5.4vh;
-}
-
-.contacts {
-  font-family: $primary-font;
-  text-shadow: $txt-shadow-color;
-  font-size: clamp(32px, 2.5vw, 38px);
-  font-weight: 800;
-  color: $primary-color;
-  text-align: center;
-  padding: 8px;
-
-  @media (min-width: 2560px) {
-    font-size: 5rem;
-  }
-}
-
-.socialContacts {
-  width: 100%;
-  height: 30vh;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
 }
 
-.linkBiLink,
-.linkBiGit,
-.linkBiWpp,
-.bienvelope {
-  color: #000;
-  width: clamp(46px, 5vw, 72px);
-  height: clamp(46px, 5.2vw, 72px);
+.sectFourhTitle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+}
 
+.reactLogo {
+  width: 16px;
+  height: 16px;
+  color: $third-color;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: $secondary-color;
+  text-align: start;
   @media (min-width: 2560px) {
-    width: 96px;
-    height: 96px;
+    font-size: 2.5rem;
   }
-}
-
-.linkBiLink {
-  color: $primary-color;
-}
-
-.linkBiWpp {
-  color: $whats-color;
 }

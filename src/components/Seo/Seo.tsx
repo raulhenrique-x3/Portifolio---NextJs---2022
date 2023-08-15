@@ -46,7 +46,6 @@ const Seo = () => {
           }),
         }}
       ></script>
-      <title>Raul Henrique - Desenvolvedor Front-End</title>
     </>
   );
 };

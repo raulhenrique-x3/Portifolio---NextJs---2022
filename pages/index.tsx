@@ -4,9 +4,10 @@ import Header from "../src/components/header/Header";
 import FirstSect from "../src/components/section01/FirstSect";
 import SecondSect from "../src/components/section02/SecondSect";
 import ThirdSect from "../src/components/section03/ThirdSect";
-import FourthSect from "../src/components/section04/FourthSect";
+import FifthSect from "../src/components/section05/FifthSect";
 import ChangeLanguageProvider from "../src/context/languageContext";
 import Seo from "../src/components/Seo/Seo";
+import FourthSect from "../src/components/section04/FourthSect";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <main className={"container"}>
         <Head>
           <Seo />
+          <title>Raul Henrique - Desenvolvedor Front-End</title>
         </Head>
 
         <Header />
@@ -21,6 +23,7 @@ const Home: NextPage = () => {
         <SecondSect />
         <ThirdSect />
         <FourthSect />
+        <FifthSect />
       </main>
     </ChangeLanguageProvider>
   );

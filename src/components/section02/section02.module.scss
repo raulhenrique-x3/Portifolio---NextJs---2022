@@ -6,6 +6,7 @@
   height: auto;
   text-align: start;
   padding-left: 1rem;
+  margin-top: 10rem;
 
   @media (min-width: 768px) {
     text-align: start;
@@ -16,6 +17,8 @@
 .sectTwoTitle {
   display: flex;
   align-items: center;
+  gap: 4px;
+  margin-top: 12px;
 }
 
 .reactLogo {
@@ -26,25 +29,28 @@
 
 .sectTwoTitle > p {
   font-size: 1.5rem;
-  font-weight: 200;
+  font-weight: 300;
   color: $secondary-color;
   text-align: start;
-  padding: 12px;
-
   @media (min-width: 2560px) {
     font-size: 2.5rem;
   }
 }
 
 .sectTwo > h2 {
-  font-size: 1.6rem;
-  font-weight: 800;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: $secondary-color;
   text-align: start;
   padding: 0 12px;
+  margin-left: 4px;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
 
   @media (min-width: 2560px) {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -56,4 +62,5 @@
   align-items: center;
   overflow-x: scroll;
   gap: 12px;
+  margin-top: 12px;
 }
