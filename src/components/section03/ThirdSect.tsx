@@ -25,8 +25,8 @@ const ThirdSect: NextPage = () => {
               src={info.photo}
               className={styles.myPhoto}
               alt={"My photo"}
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               layout={"responsive"}
             />
           </div>
@@ -34,7 +34,7 @@ const ThirdSect: NextPage = () => {
           <div className={styles.myInfo} id="whoim">
             <span className={styles.sectThreeTitle}>
               <BiLogoReact className={styles.reactLogo} />
-              <h2 className={styles.aboutMe}>{info.title}</h2>
+              <h2 className={styles.title}>{info.title}</h2>
             </span>
 
             <p className={styles.aboutMeP}>
@@ -42,14 +42,14 @@ const ThirdSect: NextPage = () => {
               experiências na área.
               <br />
               <br />
-              Atualmente cursando{" "}
+              Atualmente cursando o 3º período de
               <strong>Análise e Desenvolvimento de Sistemas</strong> no
               Instituto Federal de Educação, Ciências e Tecnologia, tenho 23
               anos e sou de Pernambuco.
               <br />
               <br />
-              Tenho habilidades em <strong>React</strong>,{" "}
-              <strong>Typescript</strong>, <strong>Node.js</strong>,{" "}
+              Tenho habilidades em <strong>React</strong>,
+              <strong>Typescript</strong>, <strong>Node.js</strong>,
               <strong>Python</strong> ,<strong>MySQL</strong> e
               <strong>MongoDB</strong>.
               <br />

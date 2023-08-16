@@ -11,7 +11,9 @@ const Dropdown: React.FC<DropdownProps> = ({ label, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className={styles.dropdownContainer}
+      className={
+        isOpen ? styles.dropdownContainer : styles.dropdownContainerClosed
+      }
       onClick={() => setIsOpen(!isOpen)}
     >
       <span className={styles.dropdownLabelWrapper}>
@@ -20,11 +22,14 @@ const Dropdown: React.FC<DropdownProps> = ({ label, children }) => {
           <IoIosArrowDown />
         </button>
       </span>
-      {isOpen ? (
-        <div className={styles.childrenContainer}>{children}</div>
-      ) : (
-        <></>
-      )}
+
+      <div
+        className={
+          isOpen ? styles.childrenContainer : styles.childrenContainerClosed
+        }
+      >
+        {children}
+      </div>
     </div>
   );
 };
