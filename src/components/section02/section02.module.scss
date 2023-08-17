@@ -6,11 +6,11 @@
   height: auto;
   text-align: start;
   padding-left: 1rem;
-  margin-top: 10rem;
+  margin-top: 12rem;
 
   @media (min-width: 768px) {
     text-align: start;
-    padding-left: 4rem;
+    padding-left: 8rem;
   }
 }
 
@@ -18,7 +18,6 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-top: 12px;
 }
 
 .reactLogo {
@@ -32,8 +31,13 @@
   font-weight: 300;
   color: $secondary-color;
   text-align: start;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+
   @media (min-width: 2560px) {
-    font-size: 2.5rem;
+    font-size: 0.5rem;
   }
 }
 
@@ -44,6 +48,7 @@
   text-align: start;
   padding: 0 12px;
   margin-left: 4px;
+  margin-top: 1rem;
 
   @media (min-width: 768px) {
     font-size: 2rem;
@@ -62,5 +67,4 @@
   align-items: center;
   overflow-x: scroll;
   gap: 12px;
-  margin-top: 12px;
 }

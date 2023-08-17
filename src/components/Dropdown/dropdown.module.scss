@@ -13,6 +13,7 @@
   margin-top: 12px;
   height: 100%;
   transition: opacity 1000ms, transform 1000ms;
+  cursor: pointer;
 }
 
 .dropdownContainerClosed {
@@ -27,6 +28,7 @@
   margin-top: 12px;
   transition: opacity 1000ms, transform 1000ms;
   height: 3.5rem;
+  cursor: pointer;
 }
 
 .dropdownLabelWrapper {
