@@ -38,24 +38,30 @@ const ThirdSect: NextPage = () => {
             </span>
 
             <p className={styles.aboutMeP}>
-              <strong>Sou um desenvolvedor Fullstack</strong>, com diversas
-              experiências na área.
-              <br />
-              <br />
+              Meu nome é Raul Henrique{" "}
+              <strong>Sou um desenvolvedor Fullstack</strong> de 23 anos,
               Atualmente cursando o 3º período de
               <strong>Análise e Desenvolvimento de Sistemas</strong> no
               Instituto Federal de Educação, Ciências e Tecnologia, tenho 23
               anos e sou de Pernambuco.
               <br />
               <br />
-              Tenho habilidades em <strong>React</strong>,
-              <strong>Typescript</strong>, <strong>Node.js</strong>,
-              <strong>Python</strong> ,<strong>MySQL</strong> e
-              <strong>MongoDB</strong>.
+              Com minha experiência e habilidades, estou confiante de que posso
+              criar a melhor solução para o seu negócio.
               <br />
               <br />
-              Sou comprometido, detalhista e busco constantemente aprimorar
-              minhas habilidades. Agradeço a confiança!
+              Além disso, tenho experiência em ferramentas de desenvolvimento{" "}
+              <strong>front-end</strong>, <strong>back-end</strong> e{" "}
+              <strong>mobile</strong> bem como em bancos de dados{" "}
+              <strong>SQL </strong>e <strong>NoSQL</strong>.
+              <br />
+              <br />
+              Sou comprometido com o <strong>cumprimento de prazos </strong>e a
+              criação de <strong>layouts bonitos e atraentes</strong>. Minha
+              ampla gama de habilidades me permite oferecer soluções completas e
+              personalizadas para atender às suas necessidades específicas.
+              Comigo, você pode ter certeza de que seu projeto está em boas
+              mãos.
             </p>
           </div>
         </div>

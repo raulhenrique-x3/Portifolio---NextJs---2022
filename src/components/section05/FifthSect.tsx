@@ -1,17 +1,58 @@
 import { NextPage } from "next";
 import styles from "../section05/section05.module.scss";
 import useLanguage from "../../hooks/useLanguage";
+import { SubmitHandler, useForm } from "react-hook-form";
+
+interface IInputs {
+  nome: string;
+  email: string;
+  assunto: string;
+}
 
 const FifthSect: NextPage = () => {
   const { language } = useLanguage();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm<IInputs>();
+
+  const onSubmit: SubmitHandler<IInputs> = (data) => {
+    try {
+      const { nome, email, assunto } = data;
+      const whatsappLink = `https://api.whatsapp.com/send?phone=5581986838081&text=Ol%C3%A1%2C%20meu%20nome%20%C3%A9%20${nome}%2C%20meu%20email%20%C3%A9%20${email}%20e%20meu%20assunto%20%C3%A9%20${assunto}`;
+      window.open(whatsappLink, "_blank");
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <section className={styles.fourthSect} id="contacts">
       <div className={styles.fourthSectStyle}>
-        {language ? (
-          <p className={styles.contacts}>CONTACT ME</p>
-        ) : (
-          <p className={styles.contacts}>CONTATOS</p>
-        )}
+        <p className={styles.contacts}>CONTATO</p>
+        <div className={styles.formContainer}>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <input
+              type="text"
+              placeholder="Nome"
+              {...register("nome", { required: true })}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              {...register("email", { required: true })}
+            />
+            <input
+              type="text"
+              placeholder="Assunto"
+              {...register("assunto", { required: true })}
+            />
+            <input type="submit" className={styles.inputSubmit} />
+          </form>
+        </div>
+        {/* 
         <div className={styles.socialContacts}>
           <a
             target="_blank"
@@ -76,7 +117,7 @@ const FifthSect: NextPage = () => {
               <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
             </svg>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
