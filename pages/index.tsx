@@ -8,6 +8,7 @@ import FifthSect from "../src/components/section05/FifthSect";
 import ChangeLanguageProvider from "../src/context/languageContext";
 import Seo from "../src/components/Seo/Seo";
 import FourthSect from "../src/components/section04/FourthSect";
+import Footer from "../src/components/footer/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
         <ThirdSect />
         <FourthSect />
         <FifthSect />
+        <Footer />
       </main>
     </ChangeLanguageProvider>
   );
