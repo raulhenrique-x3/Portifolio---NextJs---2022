@@ -64,7 +64,7 @@
     align-items: center;
     justify-content: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       width: 50%;
     }
 
@@ -75,7 +75,8 @@
     }
 
     input,
-    textarea {
+    textarea,
+    .inputSubmit {
       width: 100%;
       padding: 16px;
       border-radius: 5px;

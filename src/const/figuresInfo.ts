@@ -1,75 +1,63 @@
-export const figureInfoPtBr = [
+export const figureInfoEn = [
   {
-    src: "/goldenDuelist.svg",
-    alt: "Projeto Golden Duelist, basead no cardGame Yu-Gi-Oh, criado com React.Js, SASS, Typescript e Redux-Toolkit. O site criado com React.js, SASS, Typescript e Redux-Toolik sobre o cardgame Yu-Gi-Oh! é um marketplace responsivo e interativo. Ele permite aos usuários pesquisar cartas e analisar preços de cards.",
-    title: "Golden Duelist",
+    src: "/the_mafiusus_cat.png",
+    alt: "Website created for a team of NFT creators with the purpose of publicizing the launch of the coin and its objectives.",
+    title: "The Mafiususcat",
     description:
-      "O site criado com React.js, SASS, Typescript e Redux-Toolik sobre o cardgame Yu-Gi-Oh! é um marketplace responsivo e interativo. Ele permite aos usuários pesquisar cartas e analisar preços de cards.",
-    code: "https://github.com/raulhenrique-x3/Golden-Duelist",
-    website: "https://golden-duelist.vercel.app/",
+      "Website created for a team of NFT creators with the purpose of publicizing the launch of the coin and its objectives.",
+    website: "https://mafiusucats.vercel.app/",
     objectFit: "cover",
     id: 1,
   },
 
   {
-    src: "/movieApp.svg",
-    alt: "Criei esse webapp utilizando ReactJs, Typescript, ReactHookForm, ReactRouterDom, TMDB API e Context API.",
-    title: "Movie App",
-    description:
-      "Criei esse webapp utilizando ReactJs, Typescript, ReactHookForm, ReactRouterDom, TMDB API e Context API.",
-    code: "https://github.com/raulhenrique-x3/MovieApp-ReactJs-Typescript",
-    website: "https://movieapp-reactjs-ts.vercel.app/",
-    objectFit: "cover",
-    id: 2,
-  },
-
-  {
-    src: "/reactNativeApp.svg",
-    alt: "Projeto desenvolvido usando React-Native, Typescript, Node.Js (API) e MySql (Database), é um CRUD onde ousuário pode se cadastrar por meio de login e fazer o cadastro de aparelhos eletrônicos.",
-    title: "React-Native App-Shop",
-    description:
-      "Projeto desenvolvido usando React-Native, Typescript, Node.Js (API) e MySql (Database), é um CRUD onde ousuário pode se cadastrar por meio de login e fazer o cadastro de aparelhos eletrônicos.",
-    code: "https://github.com/raulhenrique-x3/react-native-shop-app",
-    objectFit: "cover",
-    id: 3,
-  },
-
-  {
-    src: "/pBolaOval.svg",
-    alt: "Projeto criado com uma equipe para aprender desenvolvimento de componentes utilizando o Storybook e também para aprender sobre testes.",
-    title: "Projeto Bola Oval",
-    description:
-      "Projeto criado em equipe, para aprendermos sobre a criação de componentes React utilizando o Storybook, testar esses componentes com React Testing Library e também aprender a utilizar o Github.",
-    code: "https://github.com/codigo-de-queijo/cheestorybook",
+    src: "/ajudai.png",
+    alt: "Webapp developed in a college project, Ajudaí aims to help people who are in a situation of social vulnerability.",
+    title: "Ajudaí",
+    description: "Webapp developed in a college project, Ajudaí aims to help people who are in a situation of social vulnerability.",
+    code: "https://github.com/Ajudai/projeto",
+    website: "https://ajudai.vercel.app/",
     objectFit: "cover",
     id: 4,
   },
 
   {
-    src: "/topTreino.svg",
-    alt: "Projeto freelancer desenvolvido para atender a necessidade da academia do meu bairro. Feito com Next.Js e SCSS.",
-    title: "Academia Top Treino",
+    src: "/golden_duelist.png",
+    alt: "Golden Duelist project, based on the Yu-Gi-Oh cardGame, created with React.Js, SASS, Typescript and Redux-Toolkit.",
+    title: "Golden Duelist",
     description:
-      "Projeto freelancer desenvolvido para atender a necessidade da academia do meu bairro. Feito com Next.Js e SCSS.",
-    code: "https://github.com/raulhenrique-x3/Top-Treino-Next-Js",
-    website: "https://top-treino.vercel.app/",
+      "Golden Duelist project, based on the Yu-Gi-Oh cardGame, created with React.Js, SASS, Typescript and Redux-Toolkit. ",
+    code: "https://github.com/raulhenrique-x3/Golden-Duelist",
+    website: "https://golden-duelist.vercel.app/",
     objectFit: "cover",
-    id: 5,
+    id: 2,
   },
 
   {
-    src: "/advPage.svg",
-    alt: "Landing Page responsiva criada com NextJs, Typescript, SCSS e algumas libs React.",
-    title: "Henrique Advocacia",
-    description: "Landing Page responsiva criada com NextJs, Typescript, SCSS e algumas libs React..",
+    src: "/dev_cine.png",
+    alt: "I created this webapp using ReactJs, Typescript, ReactHookForm, ReactRouterDom, TMDB API and Context API.",
+    title: "Movie App",
+    description:
+      "I created this webapp using ReactJs, Typescript, ReactHookForm, ReactRouterDom, TMDB API and Context API.",
+    code: "https://github.com/raulhenrique-x3/MovieApp-ReactJs-Typescript",
+    website: "https://movieapp-reactjs-ts.vercel.app/",
+    objectFit: "cover",
+    id: 3,
+  },
+
+  {
+    src: "/henrique_lawyer.png",
+    alt: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
+    title: "Henrique Advocacy",
+    description: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
     code: "https://github.com/raulhenrique-x3/raul-henrique-advocacia",
     website: "https://henrique-advocacia.vercel.app/",
     objectFit: "cover",
-    id: 6,
+    id: 4,
   },
 ];
 
-export const figureInfoEn = [
+export const figureInfoPtBr = [
   {
     src: "/the_mafiusus_cat.png",
     alt: "Website criado para uma equipe de criadores de NFT com o propósito de divulgar o lançamento da moeda e seus objetivos.",
@@ -127,3 +115,4 @@ export const figureInfoEn = [
     id: 4,
   },
 ];
+

@@ -11,7 +11,9 @@ const FourthSect = () => {
     <section className={styles.sectFourthContainer}>
       <span className={styles.sectFourhTitle}>
         <BiLogoReact className={styles.reactLogo} />
-        <h2 className={styles.sectionTitle}>SKILLS</h2>
+        <h2 className={styles.sectionTitle} id="skills">
+          SKILLS
+        </h2>
       </span>
       <div className={styles.fourthSectionContainer}>
         <Dropdown label="Front-end">
@@ -56,7 +58,7 @@ const FourthSect = () => {
           ))}
         </Dropdown>
 
-        <Dropdown label="Outros">
+        <Dropdown label="Others">
           {mySkills[0].others.map((skill) => (
             <DropdownItem key={skill.id}>
               <Image

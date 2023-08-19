@@ -21,7 +21,7 @@
   justify-content: space-between;
   align-items: center;
   color: $sixty-color;
-
+  white-space: nowrap;
   @media (min-width: 768px) {
     width: unset;
   }
@@ -29,11 +29,6 @@
   @media (min-width: 2560px) {
     width: 256px;
   }
-}
-
-.button {
-  border: 0;
-  background-color: none;
 }
 
 .headerIconBiMenu {
@@ -108,6 +103,11 @@
       font-size: 2rem;
     }
   }
+  :hover {
+    font-weight: 800;
+    font-size: 1.1rem;
+    transition: ease-in-out 0.3s;
+  }
 }
 
 .socialContacts {
@@ -125,6 +125,7 @@
 .headerIcon {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     width: clamp(24px, 15vw, 28px);
@@ -136,56 +137,9 @@
   }
 }
 
-.flagButton {
-  border: none;
-  background: none;
-  object-fit: cover;
-}
-
-.biLinkedin {
-  color: $sixty-color;
-}
-
-.biWhatsapp {
-  color: $whats-color;
-}
-
-.flagBrazil {
-  object-fit: contain;
-  width: 32px;
-  height: 32px;
-  background-color: $whats-color;
-  border-radius: 50%;
-  color: #fff;
-}
-
-.flagUsa {
-  object-fit: contain;
-  width: 32px;
-  height: 32px;
-  background-color: $sixty-color;
-  border-radius: 50%;
-  color: #fff;
-}
-
 @media (min-width: 768px) {
   .socialContacts {
     gap: 12px;
     justify-content: unset;
-  }
-
-  .changeLanguange {
-    margin-left: 16px;
-  }
-
-  .flagButton {
-    border: none;
-    background: none;
-    object-fit: cover;
-    cursor: pointer;
-  }
-
-  .flag {
-    object-fit: contain;
   }
 }

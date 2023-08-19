@@ -1,21 +1,17 @@
 import { NextPage } from "next";
-import { Tooltip } from "../Tooltip/Tooltip";
 import styles from "../section03/section03.module.scss";
 import Image from "next/image";
-import useLanguage from "../../hooks/useLanguage";
 import { BiLogoReact } from "react-icons/bi";
 
 const aboutMe = [
   {
     id: 0,
-    title: "SOBRE",
+    title: "ABOUT",
     photo: "/mySelf.png",
   },
 ];
 
 const ThirdSect: NextPage = () => {
-  const { language } = useLanguage();
-
   return (
     <section className={styles.thirdSect}>
       {aboutMe.map((info) => (
@@ -38,30 +34,26 @@ const ThirdSect: NextPage = () => {
             </span>
 
             <p className={styles.aboutMeP}>
-              Meu nome é Raul Henrique{" "}
-              <strong>Sou um desenvolvedor Fullstack</strong> de 23 anos,
-              Atualmente cursando o 3º período de
-              <strong>Análise e Desenvolvimento de Sistemas</strong> no
-              Instituto Federal de Educação, Ciências e Tecnologia, tenho 23
-              anos e sou de Pernambuco.
+              My name is Raul Henrique Im a 23 year old{" "}
+              <strong>Fullstack developer</strong>. Currently studying the 3rd
+              period of <strong>Analysis and systems development </strong>
+              at the Federal Institute of Education, Science and Technology.
               <br />
               <br />
-              Com minha experiência e habilidades, estou confiante de que posso
-              criar a melhor solução para o seu negócio.
+              With my experience and skills, I am confident that I can create
+              the best solution for your business.
               <br />
               <br />
-              Além disso, tenho experiência em ferramentas de desenvolvimento{" "}
-              <strong>front-end</strong>, <strong>back-end</strong> e{" "}
-              <strong>mobile</strong> bem como em bancos de dados{" "}
-              <strong>SQL </strong>e <strong>NoSQL</strong>.
+              In addition, I have experience in development tools{" "}
+              <strong>front-end</strong>, <strong>back-end</strong> and{" "}
+              <strong>mobile</strong> as well as databases <strong>SQL </strong>
+              e <strong>NoSQL</strong>.
               <br />
-              <br />
-              Sou comprometido com o <strong>cumprimento de prazos </strong>e a
-              criação de <strong>layouts bonitos e atraentes</strong>. Minha
-              ampla gama de habilidades me permite oferecer soluções completas e
-              personalizadas para atender às suas necessidades específicas.
-              Comigo, você pode ter certeza de que seu projeto está em boas
-              mãos.
+              <br />I am committed to <strong>meeting deadlines </strong>e a and
+              creating <strong>beautiful and attractive layouts</strong>. My
+              wide range of skills allows me to offer complete solutions and
+              customized to meet your specific needs. With me, you can be sure
+              that your project is in good shape. hands.
             </p>
           </div>
         </div>
