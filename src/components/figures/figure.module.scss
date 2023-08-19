@@ -1,0 +1,98 @@
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
+
+.figureContainer {
+  min-width: 310px;
+  display: block;
+  border-radius: 10px;
+  margin-top: 16px;
+  box-shadow: $box-shadow-color;
+  border: 0.5px solid #d9d9d913;
+  background-color: #26639865;
+
+  @media (min-width: 620px) {
+    min-width: 380px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 30%;
+  }
+}
+
+.figureImage {
+  border-radius: 5px !important;
+  padding: 8px !important;
+}
+
+.figureHeader {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+
+  @media (min-width: 620px) {
+    height: clamp(25vh, 30vh, 30vh);
+    margin-bottom: 0;
+  }
+}
+
+.projectName,
+.description {
+  font-family: $primary-font;
+  padding: 9px;
+  text-align: center;
+  color: $sixty-color;
+}
+
+.projectName {
+  font-size: clamp(12px, 8vw, 18px);
+  font-weight: 800;
+
+  @media (min-width: 2560px) {
+    font-size: 3rem;
+  }
+}
+
+.description {
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 600;
+  opacity: 0.6;
+
+  @media (min-width: 2560px) {
+    font-size: 2.5rem;
+  }
+}
+
+.figureButtonsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 18px;
+}
+
+.figureButton {
+  color: $third-color;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+  border: 0.5px solid #d9d9d913;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  @media (min-width: 620px) {
+    padding: clamp(8px, 1.5vw, 18px);
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 2560px) {
+    padding: 36px;
+    font-size: 32px;
+  }
+}

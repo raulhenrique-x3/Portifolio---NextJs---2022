@@ -1,0 +1,99 @@
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
+
+.dropdownContainer {
+  width: 100%;
+  padding: 1rem;
+  background-color: #2663985b;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: $box-shadow;
+  margin-top: 12px;
+  height: 100%;
+  transition: opacity 1000ms, transform 1000ms;
+  cursor: pointer;
+}
+
+.dropdownContainerClosed {
+  width: 100%;
+  padding: 1rem;
+  background-color: #2663985b;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: $box-shadow;
+  margin-top: 12px;
+  transition: opacity 1000ms, transform 1000ms;
+  height: 3.5rem;
+  cursor: pointer;
+}
+
+.dropdownLabelWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdownLabel {
+  color: $third-color;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+}
+
+.dropdownButton {
+  background-color: transparent;
+  border: none;
+  color: $third-color;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdownItemContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 1rem 0;
+  border-bottom: 0.1px solid #ffffff28;
+}
+
+.dropdownItemContainer > h3 {
+  color: $third-color;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  font-weight: 200;
+}
+
+.childrenContainer {
+  width: 100%;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+
+  .dropdownItemContainer {
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+}
+
+.childrenContainerClosed {
+  width: 100%;
+  transform: translateY(-100%);
+  opacity: 0;
+  margin-top: 150%;
+  transition: opacity 500ms, transform 500ms;
+
+  .dropdownItemContainer {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: opacity 500ms, transform 500ms;
+    display: none;
+  }
+}

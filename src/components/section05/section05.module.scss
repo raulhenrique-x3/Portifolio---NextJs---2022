@@ -1,0 +1,102 @@
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
+
+.fourthSect {
+  width: 100%;
+  margin-top: 12rem;
+
+  @media (min-width: 768px) {
+    padding: 0 8rem;
+  }
+}
+
+.fourthSectStyle {
+  width: 100%;
+}
+
+.sectFifthTitle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+  margin-left: 1rem;
+  margin-top: 4rem;
+
+  @media (min-width: 768px) {
+    margin-left: 1rem;
+    padding: 0 2rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.reactLogo {
+  width: 2rem;
+  height: 2rem;
+  color: $third-color;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: $secondary-color;
+  text-align: start;
+
+  @media (min-width: 2560px) {
+    font-size: 2.5rem;
+  }
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  margin-top: 1.5rem;
+
+  form {
+    width: 100%;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
+
+    span {
+      width: 100%;
+      display: flex;
+      gap: 12px;
+    }
+
+    input,
+    textarea,
+    .inputSubmit {
+      width: 100%;
+      padding: 16px;
+      border-radius: 5px;
+      border: 0.5px solid #d9d9d950;
+      box-shadow: $box-shadow;
+      background-color: #d9d9d918;
+    }
+    textarea {
+      color: #fff;
+    }
+    ::placeholder {
+      color: #d9d9d9;
+    }
+
+    .inputSubmit {
+      background: #266398;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+    }
+  }
+}

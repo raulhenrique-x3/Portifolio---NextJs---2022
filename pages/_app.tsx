@@ -1,5 +1,5 @@
 import "../styles/globals.scss";
-import "../components/Tooltip/tooltip.css";
+import "../src/components/Tooltip/tooltip.css";
 import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {

@@ -1,4 +1,4 @@
-$secondary-color: #e6e8e3;
+@import "./colors";
 
 * {
   box-sizing: border-box;
@@ -6,16 +6,45 @@ $secondary-color: #e6e8e3;
   margin: 0;
   text-decoration: none;
   list-style-type: none;
+  scrollbar-width: thin;
+  scrollbar-color: $secondary-color $primary-color;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
   max-width: 100%;
   overflow-x: hidden;
-  background-color: $secondary-color;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsla(225, 83%, 24%, 1);
+  background-image: radial-gradient(
+      at 51% 20%,
+      hsla(230, 100%, 8%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 92% 26%, hsla(225, 83%, 24%, 1) 0px, transparent 50%),
+    radial-gradient(at 13% 19%, hsla(203, 84%, 35%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 37%, hsla(197, 89%, 81%, 1) 0px, transparent 50%),
+    radial-gradient(at 86% 82%, hsla(225, 83%, 24%, 1) 0px, transparent 50%),
+    radial-gradient(at 21% 85%, hsla(203, 83%, 35%, 1) 0px, transparent 50%),
+    radial-gradient(at 48% 94%, hsla(44, 0%, 85%, 1) 0px, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  backdrop-filter: blur(10px);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $third-color;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
 }
 
 a {

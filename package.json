@@ -1,6 +1,6 @@
 {
-  "name": "portifolio-nextjs-2022",
-  "version": "0.1.0",
+  "name": "portifolio-nextjs-2023",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,8 +12,10 @@
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.7.1",
+    "react-hook-form": "^7.45.4",
+    "react-icons": "^4.10.1",
     "react-scroll": "^1.8.9",
+    "react-toastify": "^9.1.3",
     "sass": "^1.55.0"
   },
   "devDependencies": {
