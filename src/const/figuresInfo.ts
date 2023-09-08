@@ -14,7 +14,8 @@ export const figureInfoEn = [
     src: "/ajudai.png",
     alt: "Webapp developed in a college project, Ajudaí aims to help people who are in a situation of social vulnerability.",
     title: "Ajudaí",
-    description: "Webapp developed in a college project, Ajudaí aims to help people who are in a situation of social vulnerability.",
+    description:
+      "Webapp developed in a college project, Ajudaí aims to help people who are in a situation of social vulnerability.",
     code: "https://github.com/Ajudai/projeto",
     website: "https://ajudai.vercel.app/",
     objectFit: "cover",
@@ -49,7 +50,8 @@ export const figureInfoEn = [
     src: "/henrique_lawyer.png",
     alt: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
     title: "Henrique Advocacy",
-    description: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
+    description:
+      "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
     code: "https://github.com/raulhenrique-x3/raul-henrique-advocacia",
     website: "https://henrique-advocacia.vercel.app/",
     objectFit: "cover",
@@ -73,7 +75,8 @@ export const figureInfoPtBr = [
     src: "/ajudai.png",
     alt: "Webapp desenvolvido em projeto na faculdade o Ajudaí tem o propósito de ajudar pessoas que estão em situação de vulnerabilidade social.",
     title: "Ajudaí",
-    description: "Webapp desenvolvido em projeto na faculdade o Ajudaí tem o propósito de ajudar pessoas que estão em situação de vulnerabilidade social.",
+    description:
+      "Webapp desenvolvido em projeto na faculdade o Ajudaí tem o propósito de ajudar pessoas que estão em situação de vulnerabilidade social.",
     code: "https://github.com/Ajudai/projeto",
     website: "https://ajudai.vercel.app/",
     objectFit: "cover",
@@ -85,7 +88,7 @@ export const figureInfoPtBr = [
     alt: "Golden Duelist project, based on the Yu-Gi-Oh cardGame, created with React.Js, SASS, Typescript and Redux-Toolkit. The site created with React.js, SASS, Typescript and Redux-Toolik about the Yu-Gi-Oh! is a responsive and interactive marketplace. It allows users to search for cards, exchange cards and analyze prices for those exchanges.",
     title: "Golden Duelist",
     description:
-      "The site created with React.js, SASS, Typescript and Redux-Toolik about the Yu-Gi-Oh! is a responsive and interactive marketplace. It allows users to search for cards and analyze prices of cards.",
+      "It's a responsive and interactive Yu-Gi-Oh marketplace. It allows users to search for cards and analyze prices of cards.",
     code: "https://github.com/raulhenrique-x3/Golden-Duelist",
     website: "https://golden-duelist.vercel.app/",
     objectFit: "cover",
@@ -108,11 +111,11 @@ export const figureInfoPtBr = [
     src: "/henrique_lawyer.png",
     alt: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
     title: "Henrique Advocacy",
-    description: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
+    description:
+      "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
     code: "https://github.com/raulhenrique-x3/raul-henrique-advocacia",
     website: "https://henrique-advocacia.vercel.app/",
     objectFit: "cover",
     id: 4,
   },
 ];
-
