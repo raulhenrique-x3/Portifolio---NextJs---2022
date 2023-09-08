@@ -1,39 +1,39 @@
 import { NextPage } from "next";
-import Image from "next/image";
 import styles from "../section01/section01.module.scss";
-import myPhoto from "../../../assets/myPhoto.jpg";
-import { Tooltip } from "../Tooltip/Tooltip";
 import useLanguage from "../../hooks/useLanguage";
 import { BiLogoReact } from "react-icons/bi";
+import { Link } from "react-scroll";
 
 const FirstSect: NextPage = () => {
-  const { language } = useLanguage();
-
   return (
     <section className={styles.sectOne}>
       <div className={styles.infoData}>
         <BiLogoReact className={styles.reactLogo} />
 
         <div className={styles.personalInfoContainer}>
-          <p className={styles.fullStackDevP}>DESENVOLVEDOR FULLSTACK</p>
+          <p className={styles.fullStackDevP}>FULLSTACK DEVELOPER</p>
           <p className={styles.myNameP}>RAUL HENRIQUE</p>
           <p className={styles.iAm}>
-            Bem vindo(a) ao meu portifólio!
+            Welcome to my portifolio
             <br />
-            Espero que você goste do meu trabalho.
+            Hope you like my work.
           </p>
           <div className={styles.curriculos}>
-            <Tooltip description="See" direction="bottom">
-              <a
-                href="/cv_front_end_en.pdf"
-                target="_blank"
-                className={styles.aRef}
-              >
-                <button className={styles.cvButton} aria-label="curriculum">
-                  <p className={styles.resumeP}>Resume</p>
-                </button>
-              </a>
-            </Tooltip>
+            <Link
+              to={"whoim"}
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              offset={50}
+              duration={500}
+              isDynamic={true}
+              ignoreCancelEvents={false}
+              className={styles.aRef}
+            >
+              <button className={styles.cvButton} aria-label="curriculum">
+                <p className={styles.resumeP}>About me</p>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

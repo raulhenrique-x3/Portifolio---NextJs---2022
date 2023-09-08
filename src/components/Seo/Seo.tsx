@@ -31,7 +31,7 @@ const Seo = () => {
       <meta property="og:image:type" content="image/png"></meta>
       <link rel="dns-prefetch" href="//raul-henrique-dev.vercel.app"></link>
       <link rel="dns-prefetch" href="//fonts.googleapis.com"></link>
-      <link rel="icon" type="image/x-icon" href="/logotitle.png" />
+      <link rel="icon" type="image/x-icon" href="/R.svg" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
