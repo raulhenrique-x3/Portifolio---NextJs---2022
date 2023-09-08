@@ -6,7 +6,7 @@ const Seo = () => {
       <link rel="canonical" href="https://raul-henrique-dev.vercel.app/" />
       <meta
         name="keywords"
-        content="Front-End, Raul Henrique, Dev Raul Henrique, Desenvolvedor Raul Henrique, Desenvolvedor Front-End, Dev front, web design, raul, henrique"
+        content="Front-End, Fullstack, Full-Stack, frontend, desenvolvedor em pernambuco, Raul Henrique, Dev Raul Henrique, Desenvolvedor Raul Henrique, Desenvolvedor Front-End, Dev front, web design, raul, henrique, dev fullstack, development, fullstack development, desenvolvedor front-end em pernambuco, desenvolvedor fullstack em pernambuco, brazil dev, brazilian dev"
       ></meta>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +31,6 @@ const Seo = () => {
       <meta property="og:image:type" content="image/png"></meta>
       <link rel="dns-prefetch" href="//raul-henrique-dev.vercel.app"></link>
       <link rel="dns-prefetch" href="//fonts.googleapis.com"></link>
-      <link rel="icon" type="image/x-icon" href="/R.svg" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
