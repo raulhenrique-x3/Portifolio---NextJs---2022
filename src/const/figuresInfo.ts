@@ -14,7 +14,8 @@ export const figureInfoEn = [
     src: "/ajudai.png",
     alt: "Webapp developed in a college project, Ajudaí aims to help people who are in a situation of social vulnerability.",
     title: "Ajudaí",
-    description: "Webapp developed in a college project, Ajudaí aims to help people who are in a situation of social vulnerability.",
+    description:
+      "Webapp developed in a college project, Ajudaí aims to help people who are in a situation of social vulnerability.",
     code: "https://github.com/Ajudai/projeto",
     website: "https://ajudai.vercel.app/",
     objectFit: "cover",
@@ -34,13 +35,6 @@ export const figureInfoEn = [
   },
 
   {
-<<<<<<< HEAD
-    src: "/advPage.svg",
-    alt: "Landing Page responsiva criada com NextJs, Typescript, SCSS e algumas libs React.",
-    title: "Henrique Advocacia",
-    description:
-      "Landing Page responsiva criada com NextJs, Typescript, SCSS e algumas libs React..",
-=======
     src: "/dev_cine.png",
     alt: "I created this webapp using ReactJs, Typescript, ReactHookForm, ReactRouterDom, TMDB API and Context API.",
     title: "Movie App",
@@ -56,8 +50,8 @@ export const figureInfoEn = [
     src: "/henrique_lawyer.png",
     alt: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
     title: "Henrique Advocacy",
-    description: "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
->>>>>>> 1fb3baf986877035e0807d919e77ea7e29a3deeb
+    description:
+      "Responsive landing page created with NextJs, Typescript, SCSS and some React libs.",
     code: "https://github.com/raulhenrique-x3/raul-henrique-advocacia",
     website: "https://henrique-advocacia.vercel.app/",
     objectFit: "cover",
@@ -125,4 +119,3 @@ export const figureInfoPtBr = [
     id: 4,
   },
 ];
-
