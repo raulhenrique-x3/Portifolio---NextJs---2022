@@ -40,8 +40,16 @@ export const Figure: React.FC<IFigure> = ({
 
       <div className={styles.figureButtonsWrapper}>
         {code !== undefined ? (
-          <a target="_blank" rel="noreferrer" href={code}>
-            <button className={styles.figureButton} aria-label="code">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={code}
+            aria-label="Botão para Acessar o github"
+          >
+            <button
+              className={styles.figureButton}
+              aria-label="Botão para Acessar o github"
+            >
               <BsGithub className={styles.buttonIcon} />
               Code
             </button>
@@ -51,8 +59,16 @@ export const Figure: React.FC<IFigure> = ({
         )}
 
         {website !== undefined ? (
-          <a target="_blank" rel="noreferrer" href={website}>
-            <button className={styles.figureButton} aria-label="site">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={website}
+            aria-label="Botão para Acessar o site do projeto"
+          >
+            <button
+              className={styles.figureButton}
+              aria-label="Botão para Acessar o site do projeto"
+            >
               <AiOutlineGlobal className={styles.buttonIcon} />
               Website
             </button>

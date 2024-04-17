@@ -18,7 +18,10 @@ const Dropdown: React.FC<DropdownProps> = ({ label, children }) => {
     >
       <span className={styles.dropdownLabelWrapper}>
         <p className={styles.dropdownLabel}>{label}</p>
-        <button className={styles.dropdownButton}>
+        <button
+          className={styles.dropdownButton}
+          aria-label="Botão para Abrir o dropdown"
+        >
           <IoIosArrowDown />
         </button>
       </span>

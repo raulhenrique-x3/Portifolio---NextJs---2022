@@ -61,7 +61,7 @@ const Header = () => {
       <div className={styles.socialContacts}>
         <div className={styles.socialContacts}>
           {linksToSocialMedia.map((item, index) => (
-            <a key={index}>
+            <a key={index} aria-label="Botão para Acessar redes">
               <item.icon
                 key={index}
                 onClick={() => handleClickToWhatsapp(item.link)}

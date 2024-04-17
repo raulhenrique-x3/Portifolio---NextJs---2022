@@ -15,7 +15,6 @@ const FifthSect: NextPage = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<IInputs>();
 
@@ -56,7 +55,11 @@ const FifthSect: NextPage = () => {
               placeholder="Your subject"
               {...register("subject", { required: true })}
             ></textarea>
-            <button type="submit" className={styles.inputSubmit}>
+            <button
+              type="submit"
+              className={styles.inputSubmit}
+              aria-label="Botão para envio do formulário de contato"
+            >
               Send
             </button>
           </form>

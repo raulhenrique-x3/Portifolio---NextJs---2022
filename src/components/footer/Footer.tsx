@@ -45,7 +45,10 @@ const Footer = () => {
         <BiLogoWhatsapp onClick={() => handleClickToWhatsapp()} />
         <BiLogoGithub onClick={() => handleClickToGithub()} />
         <BiLogoLinkedinSquare onClick={() => handleClickToLinkedin()} />
-        <a href="mailto:raulheri43@hotmail.com">
+        <a
+          href="mailto:raulheri43@hotmail.com"
+          aria-label="Botão para enviar email"
+        >
           <SiMicrosoftoutlook />
         </a>
       </div>
