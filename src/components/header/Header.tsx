@@ -41,6 +41,7 @@ const Header = () => {
             {headerNav.map((item) => (
               <li className={styles.liList} key={item.id}>
                 <Link
+                  as="button"
                   to={item.href}
                   spy={true}
                   smooth={true}
@@ -49,6 +50,7 @@ const Header = () => {
                   duration={500}
                   isDynamic={true}
                   ignoreCancelEvents={false}
+                  aria-label="Botão para acessar seções do site"
                 >
                   {item.name}
                 </Link>
