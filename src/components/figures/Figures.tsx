@@ -1,6 +1,5 @@
 import styles from "./figure.module.scss";
 import Image from "next/image";
-import useLanguage from "../../hooks/useLanguage";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineGlobal } from "react-icons/ai";
 
@@ -23,14 +22,13 @@ export const Figure: React.FC<IFigure> = ({
   website,
   objectFit,
 }) => {
-  const { language } = useLanguage();
   return (
     <figure className={styles.figureContainer}>
       <Image
         src={src}
         alt={alt}
         className={styles.figureImage}
-        width={"600"}
+        width={"400"}
         height={"300"}
         layout="responsive"
         objectFit={objectFit}

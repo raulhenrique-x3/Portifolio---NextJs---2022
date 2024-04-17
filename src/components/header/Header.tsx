@@ -1,45 +1,30 @@
-import { NextPage } from "next";
 import { Link } from "react-scroll";
 import { useState } from "react";
-import { BsGithub, BsLinkedin, BsTranslate, BsWhatsapp } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { BiMenu } from "react-icons/bi";
 import { headerNav } from "../../const/headerNav";
 import styles from "../header/header.module.scss";
-import { toast } from "react-toastify";
 
-const Header: NextPage = () => {
+const linksToSocialMedia = [
+  { icon: BsGithub, link: "https://github.com/raulhenrique-x3" },
+  { icon: BsLinkedin, link: "https://www.linkedin.com/in/raul-henrique/" },
+  {
+    icon: BsWhatsapp,
+    link: "https://api.whatsapp.com/send?phone=5581986838081&text=Gostaria%20de%20falar%20com%20voc%C3%AA%20sobre%20um%20projeto%20",
+  },
+];
+
+const Header = () => {
   const [active, setActive] = useState(false);
 
-  const languageChange = () => {
-    toast.warn("Not implemented");
-  };
-  const handleClickToWhatsapp = () => {
+  const handleClickToWhatsapp = (link: string) => {
     try {
-      const whatsappLink =
-        "https://api.whatsapp.com/send?phone=5581986838081&text=Gostaria%20de%20falar%20com%20voc%C3%AA%20sobre%20um%20projeto%20";
-      window.open(whatsappLink, "_blank");
+      window.open(link, "_blank");
     } catch (error) {
       console.error(error);
     }
   };
 
-  const handleClickToGithub = () => {
-    try {
-      const githubLink = "https://github.com/raulhenrique-x3";
-      window.open(githubLink, "_blank");
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const handleClickToLinkedin = () => {
-    try {
-      const linkedinLink = "https://www.linkedin.com/in/raul-henrique/";
-      window.open(linkedinLink, "_blank");
-    } catch (error) {
-      console.error(error);
-    }
-  };
   return (
     <header className={styles.header}>
       <div data-nosnippet className={styles.logoMenu}>
@@ -74,22 +59,17 @@ const Header: NextPage = () => {
       </div>
 
       <div className={styles.socialContacts}>
-        <BsGithub
-          className={styles.headerIcon}
-          onClick={() => handleClickToGithub()}
-        />
-        <BsLinkedin
-          className={styles.headerIcon}
-          onClick={() => handleClickToLinkedin()}
-        />
-        <BsWhatsapp
-          className={styles.headerIcon}
-          onClick={() => handleClickToWhatsapp()}
-        />
-        <BsTranslate
-          onClick={() => languageChange()}
-          className={styles.headerIcon}
-        />
+        <div className={styles.socialContacts}>
+          {linksToSocialMedia.map((item, index) => (
+            <a key={index}>
+              <item.icon
+                key={index}
+                onClick={() => handleClickToWhatsapp(item.link)}
+                className={styles.headerIcon}
+              />
+            </a>
+          ))}
+        </div>
       </div>
     </header>
   );

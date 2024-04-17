@@ -11,14 +11,14 @@
   margin-top: 16px;
   box-shadow: $box-shadow-color;
   border: 0.5px solid #d9d9d913;
-  background-color: #26639865;
+  background-color: #660708;
 
   @media (min-width: 620px) {
-    min-width: 380px;
+    min-width: 280px;
   }
 
   @media (min-width: 1024px) {
-    width: 30%;
+    width: 10%;
   }
 }
 
@@ -29,13 +29,11 @@
 
 .figureHeader {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 18px;
 
   @media (min-width: 620px) {
-    height: clamp(25vh, 30vh, 30vh);
+    min-height: 200px;
     margin-bottom: 0;
   }
 }

@@ -1,12 +1,12 @@
 export const headerNav = [
   {
-    name: "Projects",
+    name: "Projetos",
     href: "projects",
     id: 0,
   },
   {
-    name: "About me",
-    href: "whoim",
+    name: "Sobre",
+    href: "about",
     id: 1,
   },
   {
@@ -15,7 +15,7 @@ export const headerNav = [
     id: 2,
   },
   {
-    name: "Contact",
+    name: "Contato",
     href: "contacts",
     id: 3,
   },
