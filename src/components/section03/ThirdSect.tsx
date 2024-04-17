@@ -13,7 +13,7 @@ const aboutMe = [
 
 const ThirdSect: NextPage = () => {
   return (
-    <section className={styles.thirdSect}>
+    <section className={styles.thirdSect} id="about">
       {aboutMe.map((info) => (
         <div key={info.id} className={styles.thirdSectInfo}>
           <div className={styles.myPhotoWrapper}>
