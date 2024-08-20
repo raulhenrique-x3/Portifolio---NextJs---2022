@@ -34,25 +34,25 @@ const FifthSect: NextPage = () => {
       <div className={styles.fourthSectStyle}>
         <span className={styles.sectFifthTitle}>
           <BiLogoReact className={styles.reactLogo} />
-          <h2 className={styles.sectionTitle}>CONTACT</h2>
+          <h2 className={styles.sectionTitle}>CONTATO</h2>
         </span>{" "}
         <div className={styles.formContainer}>
           <form onSubmit={handleSubmit(onSubmit)}>
             <span>
               <input
                 type="text"
-                placeholder="Your name"
+                placeholder="Seu nome"
                 {...register("name", { required: true })}
               />
               <input
                 type="email"
-                placeholder="Your email"
+                placeholder="Seu email"
                 {...register("email", { required: true })}
               />
             </span>
 
             <textarea
-              placeholder="Your subject"
+              placeholder="Sua proposta"
               {...register("subject", { required: true })}
             ></textarea>
             <button
@@ -60,7 +60,7 @@ const FifthSect: NextPage = () => {
               className={styles.inputSubmit}
               aria-label="Botão para envio do formulário de contato"
             >
-              Send
+              Enviar
             </button>
           </form>
         </div>

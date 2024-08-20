@@ -58,7 +58,7 @@ const FourthSect = () => {
           ))}
         </Dropdown>
 
-        <Dropdown label="Others">
+        <Dropdown label="Outros">
           {mySkills[0].others.map((skill) => (
             <DropdownItem key={skill.id}>
               <Image
